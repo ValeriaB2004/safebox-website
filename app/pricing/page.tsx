@@ -79,7 +79,7 @@ export default function PricingPage() {
         ].map((plan) => (
             <div
             key={plan.name}
-            className={`relative rounded-3xl p-8 border bg-[#0F1F33] ${
+            className={`relative rounded-3xl p-8 border bg-[#0F1F33] transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/20 ${
                 plan.popular
                 ? "border-[#C8A86B] shadow-2xl shadow-[#C8A86B]/10"
                 : "border-[#C8A86B]/20"
@@ -101,8 +101,8 @@ export default function PricingPage() {
             </p>
 
             <a
-                href="/#contact"
-                className="mt-8 inline-block w-full text-center bg-[#C8A86B] text-[#081320] px-6 py-3 rounded-full font-bold"
+                href={`/?plan=${plan.name}#contact`}
+                className="mt-8 inline-block w-full text-center bg-[#C8A86B] text-[#081320] px-6 py-3 rounded-full font-bold hover:bg-[#d6b77a] transition"
             >
                 Choose {plan.name}
             </a>
@@ -180,7 +180,7 @@ export default function PricingPage() {
 
         <a
             href="/#contact"
-            className="mt-8 inline-block bg-[#C8A86B] text-[#081320] px-10 py-4 rounded-full font-bold"
+            className="mt-8 inline-block bg-[#C8A86B] text-[#081320] px-10 py-4 rounded-full font-bold hover:bg-[#d6b77a] transition"
         >
             Book a Consultation
         </a>

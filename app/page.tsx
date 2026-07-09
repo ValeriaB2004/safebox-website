@@ -319,6 +319,13 @@ export default function Home() {
               className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
               rows={5}
               placeholder="Message"
+              defaultValue={
+                typeof window !== "undefined"
+                  ? new URLSearchParams(window.location.search).get("plan")
+                    ? `Hello, I am interested in the SafeBox ${new URLSearchParams(window.location.search).get("plan")} membership. Please contact me with more information.`
+                    : ""
+                  : ""
+              }
               required
             />
 
