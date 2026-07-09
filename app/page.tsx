@@ -60,7 +60,7 @@ export default function Home() {
             </p>
 
             <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-wide">
-              Your private space. Protected.
+              Your Safety Is Our Priority
             </h1>
 
             <p className="mt-8 text-xl text-[#D6D6D1] max-w-2xl">
@@ -202,30 +202,84 @@ export default function Home() {
       <section id="pricing" className="px-6 py-24">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center">
-            Plans
+            Memberships
           </h2>
 
+          <p className="mt-6 text-center text-[#D6D6D1]">
+            Designed for individuals, professionals and businesses.
+          </p>
+
           <div className="mt-14 grid md:grid-cols-4 gap-6">
-            {[
-              ["Basic", "Private box and basic storage."],
-              ["Standard", "Notifications and small item receiving."],
-              ["Premium", "Priority handling and digital services."],
-              ["Corporate", "Business box with multiple authorized users."],
-            ].map(([plan, desc]) => (
-              <div
-                key={plan}
-                className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8"
-              >
-                <h3 className="text-2xl font-bold text-[#C8A86B]">{plan}</h3>
-                <p className="mt-4 text-[#D6D6D1]">{desc}</p>
-                <a
-                  href="#contact"
-                  className="mt-8 inline-block border border-[#C8A86B]/50 px-5 py-3 rounded-full"
-                >
-                  Request Details
-                </a>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-[#C8A86B]">
+                Essential
+              </h3>
+
+              <p className="text-4xl font-bold mt-4">
+                €24.99
+              </p>
+
+              <p className="mt-4 text-[#D6D6D1]">
+                Perfect for individuals who need a secure private box.
+              </p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-[#C8A86B]">
+                Select
+              </h3>
+
+              <p className="text-4xl font-bold mt-4">
+                €49.99
+              </p>
+
+              <p className="mt-4 text-[#D6D6D1]">
+                Ideal for professionals and frequent travellers.
+              </p>
+            </div>
+
+            <div className="bg-[#0F1F33] border-2 border-[#C8A86B] rounded-3xl p-8 text-center">
+              <div className="inline-block bg-[#C8A86B] text-[#081320] px-4 py-1 rounded-full text-sm font-bold">
+                MOST POPULAR
               </div>
-            ))}
+
+              <h3 className="text-2xl font-bold text-[#C8A86B] mt-4">
+                Signature
+              </h3>
+
+              <p className="text-4xl font-bold mt-4">
+                €89.99
+              </p>
+
+              <p className="mt-4 text-[#D6D6D1]">
+                Complete document and private box management.
+              </p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <h3 className="text-2xl font-bold text-[#C8A86B]">
+                Executive
+              </h3>
+
+              <p className="text-4xl font-bold mt-4">
+                €149.99
+              </p>
+
+              <p className="mt-4 text-[#D6D6D1]">
+                Full business correspondence management.
+              </p>
+            </div>
+
+          </div>
+
+          <div className="text-center mt-14">
+            <a
+              href="/pricing"
+              className="bg-[#C8A86B] text-[#081320] px-10 py-4 rounded-full font-bold hover:bg-[#d6b77a] transition"
+            >
+              View Full Comparison →
+            </a>
           </div>
         </div>
       </section>
