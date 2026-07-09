@@ -1,65 +1,279 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+    const carouselImages = [
+    "/images/box1.jpg",
+    "/images/box2.jpg",
+    "/images/box3.jpg",
+    "/images/box4.jpg",
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % carouselImages.length);
+    }, 3500);
+
+    return () => clearInterval(timer);
+  }, [carouselImages.length]);
+ 
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="min-h-screen bg-[#081320] text-[#F4F4F2]">
+      <header className="fixed top-0 left-0 w-full z-50 bg-[#081320]/90 border-b border-[#C8A86B]/20 backdrop-blur">
+        <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+          <div className="flex items-center gap-4">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/images/Logo-removebg-preview.png"
+              alt="Bunker Systems Logo"
+              width={64}
+              height={64}
             />
-            Deploy Now
-          </a>
+
+            <div>
+              <h1 className="text-[#C8A86B] font-bold tracking-[0.25em] text-xl">
+                SAFEBOX
+              </h1>
+
+              <p className="text-xs text-gray-400 tracking-[0.3em] uppercase">
+                Private Box Solutions
+              </p>
+            </div>
+          </div>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
+            className="bg-[#C8A86B] text-[#081320] px-5 py-2 rounded-full font-semibold"
           >
-            Documentation
+            Book Consultation
           </a>
+        </nav>
+      </header>
+
+      <section className="pt-36 pb-24 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-[#C8A86B] tracking-[0.35em] uppercase text-sm mb-6">
+              Secure. Private. Accessible.
+            </p>
+
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-wide">
+              Your private space. Protected.
+            </h1>
+
+            <p className="mt-8 text-xl text-[#D6D6D1] max-w-2xl">
+              Premium private box solutions for individuals, companies and
+              international clients who value security, confidentiality and direct access.
+            </p>
+
+            <div className="mt-10 flex gap-4">
+              <a
+                href="#contact"
+                className="bg-[#C8A86B] text-[#081320] px-8 py-4 rounded-full font-bold"
+              >
+                Book a Consultation
+              </a>
+
+              <a
+                href="#boxes"
+                className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold"
+              >
+                Explore Boxes
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-[#C8A86B]/30 bg-[#0F1F33] p-4 shadow-2xl">
+            <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border border-[#C8A86B]/30">
+              {carouselImages.map((image, index) => (
+                <Image
+                  key={image}
+                  src={image}
+                  alt="Safebox private box"
+                  fill
+                  className={`object-cover transition-opacity duration-1000 ${
+                    index === currentImage ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#081320]/70 to-transparent" />
+
+              <div className="absolute bottom-6 left-6">
+                <p className="text-[#C8A86B] tracking-[0.35em] text-sm">
+                  SAFEBOX
+                </p>
+                <p className="text-white text-2xl font-bold mt-2">
+                  Private Box Solutions
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section id="boxes" className="px-6 py-24 bg-[#0F1F33]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
+            Private Box Solutions
+          </h2>
+
+          <p className="mt-6 text-center text-[#D6D6D1] max-w-3xl mx-auto">
+            A secure private space for documents, correspondence, small items and
+            personal or business essentials.
+          </p>
+
+          <div className="mt-14 grid md:grid-cols-3 gap-6">
+            {[
+              ["Private Box Rental", "Personal numbered boxes with secure access."],
+              ["Secure Receiving", "Receive documents and small items safely."],
+              ["Document Storage", "Keep originals protected until collection."],
+              ["Digital Mail Room", "Optional scanning and digital delivery."],
+              ["Business Boxes", "Stable private box solutions for companies."],
+              ["Premium Handling", "Priority service for important documents."],
+            ].map(([title, text]) => (
+              <div
+                key={title}
+                className="bg-[#081320] border border-[#C8A86B]/20 rounded-3xl p-8"
+              >
+                <h3 className="text-[#C8A86B] text-xl font-bold">{title}</h3>
+                <p className="mt-4 text-[#D6D6D1]">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" className="px-6 py-24">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
+            Why Choose Safebox?
+          </h2>
+
+          <div className="mt-14 grid md:grid-cols-4 gap-6">
+            {[
+              "Security",
+              "Confidentiality",
+              "Direct Access",
+              "Trust",
+              "Professionalism",
+              "Flexible Plans",
+              "Premium Location",
+              "Digital Services",
+            ].map((item) => (
+              <div
+                key={item}
+                className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center"
+              >
+                <div className="text-[#C8A86B] text-3xl mb-4">◆</div>
+                <p className="tracking-wide">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="how" className="px-6 py-24 bg-[#0F1F33]">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
+            How It Works
+          </h2>
+
+          <div className="mt-14 grid md:grid-cols-3 gap-6">
+            {[
+              ["1", "Choose your private box plan"],
+              ["2", "Use your secure box location"],
+              ["3", "Collect, store, scan or forward when needed"],
+            ].map(([number, text]) => (
+              <div
+                key={number}
+                className="bg-[#081320] border border-[#C8A86B]/20 rounded-3xl p-8 text-center"
+              >
+                <div className="text-[#C8A86B] text-4xl font-bold">{number}</div>
+                <p className="mt-5 text-lg">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" className="px-6 py-24">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center">
+            Plans
+          </h2>
+
+          <div className="mt-14 grid md:grid-cols-4 gap-6">
+            {[
+              ["Basic", "Private box and basic storage."],
+              ["Standard", "Notifications and small item receiving."],
+              ["Premium", "Priority handling and digital services."],
+              ["Corporate", "Business box with multiple authorized users."],
+            ].map(([plan, desc]) => (
+              <div
+                key={plan}
+                className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8"
+              >
+                <h3 className="text-2xl font-bold text-[#C8A86B]">{plan}</h3>
+                <p className="mt-4 text-[#D6D6D1]">{desc}</p>
+                <a
+                  href="#contact"
+                  className="mt-8 inline-block border border-[#C8A86B]/50 px-5 py-3 rounded-full"
+                >
+                  Request Details
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" className="px-6 py-24 bg-[#0F1F33]">
+        <div className="max-w-3xl mx-auto bg-[#081320] border border-[#C8A86B]/20 rounded-3xl p-10">
+          <h2 className="text-4xl font-bold text-center">Book a Consultation</h2>
+
+          <form
+            action="https://formspree.io/f/mzdllloa"
+            method="POST"
+            className="mt-10 flex flex-col gap-4"
+          >
+            <input
+              name="name"
+              className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
+              placeholder="Name"
+              required
+            />
+
+            <input
+              name="email"
+              type="email"
+              className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
+              placeholder="Email"
+              required
+            />
+
+            <input
+              name="phone"
+              className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
+              placeholder="Phone"
+            />
+
+            <textarea
+              name="message"
+              className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
+              rows={5}
+              placeholder="Message"
+              required
+            />
+
+            <button className="bg-[#C8A86B] text-[#081320] p-4 rounded-xl font-bold">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
   );
 }
