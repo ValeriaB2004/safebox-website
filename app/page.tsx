@@ -59,33 +59,33 @@ export default function Home() {
               Secure. Private. Accessible.
             </p>
 
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-wide">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-wide break-words">
               Your Safety Is Our Priority
             </h1>
 
-            <p className="mt-8 text-xl text-[#D6D6D1] max-w-2xl">
+            <p className="mt-8 text-lg sm:text-xl text-[#D6D6D1] max-w-2xl">
               Premium private box solutions for individuals, companies and
               international clients who value security, confidentiality and direct access.
             </p>
 
-            <div className="mt-10 flex gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
                 href="#contact"
-                className="bg-[#C8A86B] text-[#081320] px-8 py-4 rounded-full font-bold"
+                className="bg-[#C8A86B] text-[#081320] px-8 py-4 rounded-full font-bold text-center w-full sm:w-auto"
               >
                 Book a Consultation
               </a>
 
               <a
                 href="#boxes"
-                className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold"
+                className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold text-center w-full sm:w-auto"
               >
                 Explore SafeBox
               </a>
 
               <a
                 href="#boxes"
-                className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold"
+                className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold text-center w-full sm:w-auto"
               >
                 Explore Memberships
               </a>
