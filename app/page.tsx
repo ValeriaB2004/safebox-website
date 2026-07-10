@@ -80,7 +80,14 @@ export default function Home() {
                 href="#boxes"
                 className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold"
               >
-                Explore Boxes
+                Explore SafeBox
+              </a>
+
+              <a
+                href="#boxes"
+                className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold"
+              >
+                Explore Memberships
               </a>
             </div>
           </div>
@@ -154,21 +161,54 @@ export default function Home() {
 
           <div className="mt-14 grid md:grid-cols-4 gap-6">
             {[
-              "Security",
-              "Confidentiality",
-              "Direct Access",
-              "Trust",
-              "Professionalism",
-              "Flexible Plans",
-              "Premium Location",
-              "Digital Services",
+              {
+                title: "Security",
+                icon: "/icons/security.png",
+              },
+              {
+                title: "Confidentiality",
+                icon: "/icons/confidentiality.png",
+              },
+              {
+                title: "Direct Access",
+                icon: "/icons/direct-access.png",
+              },
+              {
+                title: "Trust",
+                icon: "/icons/trust.png",
+              },
+              {
+                title: "Professionalism",
+                icon: "/icons/professionalism.png",
+              },
+              {
+                title: "Flexible Plans",
+                icon: "/icons/flexible-plans.png",
+              },
+              {
+                title: "Premium Location",
+                icon: "/icons/premium-location.png",
+              },
+              {
+                title: "Digital Services",
+                icon: "/icons/digital-services.png",
+              },
             ].map((item) => (
               <div
-                key={item}
+                key={item.title}
                 className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center"
               >
-                <div className="text-[#C8A86B] text-3xl mb-4">◆</div>
-                <p className="tracking-wide">{item}</p>
+                <div className="mb-5 flex justify-center">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={48}
+                    height={48}
+                    className="object-contain"
+                  />
+                </div>
+
+                <p className="tracking-wide">{item.title}</p>
               </div>
             ))}
           </div>
