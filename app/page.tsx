@@ -160,57 +160,93 @@ export default function Home() {
           </h2>
 
           <div className="mt-14 grid md:grid-cols-4 gap-6">
-            {[
-              {
-                title: "Security",
-                icon: "/icons/security.png",
-              },
-              {
-                title: "Confidentiality",
-                icon: "/icons/confidentiality.png",
-              },
-              {
-                title: "Direct Access",
-                icon: "/icons/direct-access.png",
-              },
-              {
-                title: "Trust",
-                icon: "/icons/trust.png",
-              },
-              {
-                title: "Professionalism",
-                icon: "/icons/professionalism.png",
-              },
-              {
-                title: "Flexible Plans",
-                icon: "/icons/flexible-plans.png",
-              },
-              {
-                title: "Premium Location",
-                icon: "/icons/premium-location.png",
-              },
-              {
-                title: "Digital Services",
-                icon: "/icons/digital-services.png",
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center"
-              >
-                <div className="mb-5 flex justify-center">
-                  <Image
-                    src={item.icon}
-                    alt={item.title}
-                    width={48}
-                    height={48}
-                    className="object-contain"
-                  />
-                </div>
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/security.png"
+                alt="Security"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Security</p>
+            </div>
 
-                <p className="tracking-wide">{item.title}</p>
-              </div>
-            ))}
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/confidentiality.png"
+                alt="Confidentiality"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Confidentiality</p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/direct-access.png"
+                alt="Direct Access"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Direct Access</p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/trust.png"
+                alt="Trust"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Trust</p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/professionalism.png"
+                alt="Professionalism"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Professionalism</p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/flexible-plans.png"
+                alt="Flexible Plans"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Flexible Plans</p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/premium-location.png"
+                alt="Premium Location"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Premium Location</p>
+            </div>
+
+            <div className="bg-[#0F1F33] border border-[#C8A86B]/20 rounded-3xl p-8 text-center">
+              <Image
+                src="/icons/digital-services.png"
+                alt="Digital Services"
+                width={48}
+                height={48}
+                className="mx-auto mb-5"
+              />
+              <p>Digital Services</p>
+            </div>
           </div>
         </div>
       </section>
