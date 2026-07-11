@@ -1,34 +1,36 @@
+import Image from "next/image";
+
 const items = [
   {
-    icon: "📄",
+    icon: "/icons/mail.png",
     title: "Correspondence",
   },
   {
-    icon: "📑",
+    icon: "/icons/document.png",
     title: "Important Documents",
   },
   {
-    icon: "📦",
+    icon: "/icons/parcel.png",
     title: "Parcels",
   },
   {
-    icon: "🗂️",
+    icon: "/icons/business.png",
     title: "Business Records",
   },
   {
-    icon: "🔑",
+    icon: "/icons/key.png",
     title: "Keys",
   },
   {
-    icon: "💼",
+    icon: "/icons/secure.png",
     title: "Confidential Items",
   },
   {
-    icon: "📁",
+    icon: "/icons/archive.png",
     title: "Archives",
   },
   {
-    icon: "🎁",
+    icon: "/icons/delivery.png",
     title: "Deliveries",
   },
 ];
@@ -56,7 +58,15 @@ export default function WhatYouCanStore() {
               key={item.title}
               className="rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
             >
-              <div className="text-4xl">{item.icon}</div>
+              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                <Image
+                  src={item.icon}
+                  alt={item.title}
+                  width={34}
+                  height={34}
+                  className="object-contain"
+                />
+              </div>
 
               <h3 className="mt-5 text-lg font-semibold text-[#F4F4F2]">
                 {item.title}

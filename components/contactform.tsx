@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 
 export default function ContactForm() {
@@ -30,56 +31,66 @@ export default function ContactForm() {
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                    <Image
+                        src="/icons/personal-advice.png"
+                        alt="Personal Advice"
+                        width={30}
+                        height={30}
+                        className="object-contain"
+                    />
+                </div>
 
-        <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
+                <h3 className="mt-4 font-bold text-[#C8A86B]">
+                Personal Advice
+                </h3>
 
-            <div className="text-3xl">
-            📞
+                <p className="mt-3 text-[#D6D6D1]">
+                We&apos;ll recommend the most suitable SafeBox solution.
+                </p>
             </div>
 
-            <h3 className="mt-4 font-bold text-[#C8A86B]">
-            Personal Advice
-            </h3>
+            <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                <Image
+                    src="/icons/secure-confidential.png"
+                    alt="Secure and Confidential"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                />
+                </div>
 
-            <p className="mt-3 text-[#D6D6D1]">
-            We'll recommend the most suitable SafeBox solution.
-            </p>
+                <h3 className="mt-4 font-bold text-[#C8A86B]">
+                Secure &amp; Confidential
+                </h3>
 
-        </div>
-
-        <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-
-            <div className="text-3xl">
-            🛡️
+                <p className="mt-3 text-[#D6D6D1]">
+                Every enquiry is handled confidentially.
+                </p>
             </div>
 
-            <h3 className="mt-4 font-bold text-[#C8A86B]">
-            Secure & Confidential
-            </h3>
+            <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                <Image
+                    src="/icons/fast-response.png"
+                    alt="Fast Response"
+                    width={30}
+                    height={30}
+                    className="object-contain"
+                />
+                </div>
 
-            <p className="mt-3 text-[#D6D6D1]">
-            Every enquiry is handled confidentially.
-            </p>
+                <h3 className="mt-4 font-bold text-[#C8A86B]">
+                Fast Response
+                </h3>
 
-        </div>
-
-        <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-
-            <div className="text-3xl">
-            ⚡
+                <p className="mt-3 text-[#D6D6D1]">
+                We aim to respond within one business day.
+                </p>
             </div>
-
-            <h3 className="mt-4 font-bold text-[#C8A86B]">
-            Fast Response
-            </h3>
-
-            <p className="mt-3 text-[#D6D6D1]">
-            We aim to respond within one business day.
-            </p>
-
-        </div>
-
-        </div>
+            </div>
 
         <form
           action="https://formspree.io/f/mzdllloa"

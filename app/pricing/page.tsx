@@ -1,9 +1,13 @@
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import FloatingButton from "@/components/floatingbutton";
+import Image from "next/image";
 
 export default function PricingPage() {
   return (
     <>
         <Navbar />
+        <FloatingButton />
 
         <main className="min-h-screen bg-[#081320] px-6 pb-20 pt-48 text-[#F4F4F2] lg:pt-36">
 
@@ -151,23 +155,54 @@ export default function PricingPage() {
 
             <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
                 {[
-                "Multiple collection authorisations",
-                "Team access management",
-                "Secure document archive",
-                "Digital document management",
-                "Bulk scanning",
-                "Monthly reporting",
-                "Priority support",
-                "Dedicated account manager",
-                ].map((item) => (
-                <div
-                    key={item}
-                    className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center"
-                >
-                    <span className="text-[#C8A86B] text-2xl">◆</span>
-                    <p className="mt-3">{item}</p>
-                </div>
-                ))}
+                    {
+                        title: "Multiple collection authorisations",
+                        icon: "/icons/authorised-users.png",
+                    },
+                    {
+                        title: "Team access management",
+                        icon: "/icons/team-access.png",
+                    },
+                    {
+                        title: "Secure document archive",
+                        icon: "/icons/document-archive.png",
+                    },
+                    {
+                        title: "Digital document management",
+                        icon: "/icons/digital-management.png",
+                    },
+                    {
+                        title: "Bulk scanning",
+                        icon: "/icons/bulk-scanning.png",
+                    },
+                    {
+                        title: "Monthly reporting",
+                        icon: "/icons/monthly-reporting.png",
+                    },
+                    {
+                        title: "Priority support",
+                        icon: "/icons/priority-support.png",
+                    },
+                    {
+                        title: "Dedicated account manager",
+                        icon: "/icons/account-manager.png",
+                    },
+                    ].map((item) => (
+                    <div
+                        key={item.title}
+                        className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center"
+                    >
+                        <Image
+                        src={item.icon}
+                        alt={item.title}
+                        width={32}
+                        height={32}
+                        className="mx-auto object-contain"
+                        />
+
+                        <p className="mt-3">{item.title}</p>
+                    </div>
+                    ))}
             </div>
             </section>
 
@@ -187,6 +222,7 @@ export default function PricingPage() {
             </section>
         </div>
         </main>
+        <Footer/>
     </>    
   );
 }

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #081320;
+  --foreground: #f4f4f2;
 }
 
 @theme inline {
@@ -12,21 +12,17 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
@@ -37,4 +33,44 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  background: #c8a86b;
+  color: #081320;
+}
+
+button,
+a {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #c8a86b;
+  box-shadow: 0 0 0 3px rgba(200, 168, 107, 0.15);
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 150px;
+  }
 }

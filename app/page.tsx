@@ -10,19 +10,44 @@ import ContactForm from "@/components/contactform";
 import SafeBoxSizes from "@/components/safeboxsizes";
 import WhatYouCanStore from "@/components/whatyoucanstore";
 import WhoIsFor from "@/components/whoisfor";
+import Footer from "@/components/footer";
+import FadeIn from "@/components/fadein";
+import FloatingButton from "@/components/floatingbutton";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#081320] text-[#F4F4F2]">
       <Navbar />
+      <FloatingButton />
       <Hero />
-      <PrivateBoxes />
-      <WhyChoose />
-      <SafeBoxSizes />
-      <WhatYouCanStore/>
-      <WhoIsFor/>
-      <HowItWorks/>
-      <PricingPreview />
+
+      <FadeIn>
+        <PrivateBoxes />
+      </FadeIn>
+
+      <FadeIn>
+        <WhyChoose />
+      </FadeIn>
+
+      <FadeIn>
+        <SafeBoxSizes />
+      </FadeIn>
+
+      <FadeIn>
+        <WhatYouCanStore />
+      </FadeIn>
+
+      <FadeIn>
+        <WhoIsFor />
+      </FadeIn>
+
+      <FadeIn>
+        <HowItWorks />
+      </FadeIn>
+
+      <FadeIn>
+        <PricingPreview />
+      </FadeIn>
 
       <Suspense
         fallback={
@@ -33,8 +58,14 @@ export default function Home() {
           </section>
         }
       >
-        <ContactForm />
+        <FadeIn>
+          <ContactForm />
+        </FadeIn>
       </Suspense>
+
+      <FadeIn>
+        <Footer />
+      </FadeIn>
     </main>
   );
 }
