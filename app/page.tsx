@@ -7,6 +7,9 @@ import WhyChoose from "@/components/whychoose";
 import HowItWorks from "@/components/howitworks";
 import PricingPreview from "@/components/pricingpreview";
 import ContactForm from "@/components/contactform";
+import SafeBoxSizes from "@/components/safeboxsizes";
+import WhatYouCanStore from "@/components/whatyoucanstore";
+import WhoIsFor from "@/components/whoisfor";
 
 export default function Home() {
   return (
@@ -15,7 +18,10 @@ export default function Home() {
       <Hero />
       <PrivateBoxes />
       <WhyChoose />
-      <HowItWorks />
+      <SafeBoxSizes />
+      <WhatYouCanStore/>
+      <WhoIsFor/>
+      <HowItWorks/>
       <PricingPreview />
 
       <Suspense

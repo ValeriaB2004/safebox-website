@@ -22,7 +22,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="pt-36 pb-24 px-6">
+    <section className="px-6 pb-24 pt-48 lg:pt-36">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-[#C8A86B] tracking-[0.35em] uppercase text-sm mb-6">
@@ -33,10 +33,10 @@ export default function Hero() {
             Your Safety Is Our Priority
           </h1>
 
-          <p className="mt-8 text-lg sm:text-xl text-[#D6D6D1] max-w-2xl">
-            Premium private box solutions for individuals, companies and
-            international clients who value security, confidentiality and
-            direct access.
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#D6D6D1] sm:text-xl">
+            Secure private storage for correspondence, important documents,
+            parcels and business deliveries, enhanced with Digital Mailroom
+            services.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -56,7 +56,7 @@ export default function Hero() {
 
             <a
               href="#pricing"
-              className="border border-[#C8A86B]/50 px-8 py-4 rounded-full font-bold text-center w-full sm:w-auto"
+              className="w-full rounded-full border border-[#C8A86B]/50 px-8 py-4 text-center font-bold transition hover:border-[#C8A86B] hover:bg-[#C8A86B]/10 sm:w-auto"
             >
               Explore Memberships
             </a>
