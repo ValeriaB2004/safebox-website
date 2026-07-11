@@ -1,3 +1,5 @@
+import { Suspense } from "react";
+
 import Navbar from "@/components/navbar";
 import Hero from "@/components/hero";
 import PrivateBoxes from "@/components/privateboxes";
@@ -15,7 +17,18 @@ export default function Home() {
       <WhyChoose />
       <HowItWorks />
       <PricingPreview />
-      <ContactForm />
+
+      <Suspense
+        fallback={
+          <section className="bg-[#0F1F33] px-6 py-24">
+            <p className="text-center text-[#D6D6D1]">
+              Loading contact form...
+            </p>
+          </section>
+        }
+      >
+        <ContactForm />
+      </Suspense>
     </main>
   );
 }
