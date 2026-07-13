@@ -58,12 +58,12 @@ export default function WhatYouCanStore() {
               key={item.title}
               className="rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
             >
-              <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+              <div className="flex justify-center mb-6">
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={34}
-                  height={34}
+                  width={59}
+                  height={59}
                   className="object-contain"
                 />
               </div>

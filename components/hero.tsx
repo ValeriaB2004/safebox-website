@@ -5,24 +5,34 @@ import { useEffect, useState } from "react";
 
 const carouselImages = [
   {
-    src: "/images/box1.jpg",
-    title: "Private Storage",
-    description: "Secure spaces designed around your needs.",
+    src: "/images/security1.png",
+    title: "Maximum Security",
+    description:
+      "Professionally managed private SafeBoxes designed to keep your correspondence, documents and valuables secure.",
   },
   {
-    src: "/images/box2.jpg",
-    title: "Multiple SafeBox Sizes",
-    description: "From documents to parcels and business deliveries.",
+    src: "/images/access.png",
+    title: "Private Access",
+    description:
+      "Access your SafeBox whenever you need it with complete privacy and confidence.",
   },
   {
-    src: "/images/box3.jpg",
-    title: "Controlled Access",
-    description: "Privacy, security and reliable direct access.",
+    src: "/images/collection.png",
+    title: "Simple Collection",
+    description:
+      "Collect correspondence, documents and small parcels quickly using your personal SafeBox key.",
   },
   {
-    src: "/images/box4.jpg",
-    title: "Digital Services",
-    description: "Optional scanning, storage and document management.",
+    src: "/images/personal.png",
+    title: "Personal & Business Solutions",
+    description:
+      "Ideal for individuals, professionals and businesses looking for a secure private address and storage solution.",
+  },
+  {
+    src: "/images/premium.png",
+    title: "Premium SafeBox Experience",
+    description:
+      "Elegant design, advanced security and professional service in one trusted location.",
   },
 ];
 
@@ -123,7 +133,7 @@ export default function Hero() {
               type="button"
               onClick={showPreviousImage}
               aria-label="Previous image"
-              className="absolute left-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-[#081320]/70 text-xl text-white backdrop-blur transition hover:border-[#C8A86B] hover:text-[#C8A86B]"
+              className="absolute left-4 top-1/3 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-[#081320]/80 text-xl text-white backdrop-blur transition hover:border-[#C8A86B] hover:text-[#C8A86B]"
             >
               ‹
             </button>
@@ -133,18 +143,18 @@ export default function Hero() {
               type="button"
               onClick={showNextImage}
               aria-label="Next image"
-              className="absolute right-4 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-[#081320]/70 text-xl text-white backdrop-blur transition hover:border-[#C8A86B] hover:text-[#C8A86B]"
+              className="absolute right-4 top-1/3 z-20 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-[#081320]/80 text-xl text-white backdrop-blur transition hover:border-[#C8A86B] hover:text-[#C8A86B]"
             >
               ›
             </button>
 
             {/* Caption */}
-            <div className="absolute bottom-6 left-6 right-6">
+            <div className="absolute bottom-6 left-6 right-6 z-10 max-w-[72%] sm:max-w-[68%]">
               <p className="text-xs uppercase tracking-[0.35em] text-[#C8A86B]">
                 SAFEBOX
               </p>
 
-              <h2 className="mt-2 text-2xl font-bold text-white sm:text-3xl">
+              <h2 className="mt-2 text-xl font-bold leading-tight text-white sm:text-2xl lg:text-3xl">
                 {carouselImages[currentImage].title}
               </h2>
 

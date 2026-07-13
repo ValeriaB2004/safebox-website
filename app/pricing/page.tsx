@@ -1,228 +1,407 @@
+import Image from "next/image";
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import FloatingButton from "@/components/floatingbutton";
-import Image from "next/image";
+
+const plans = [
+  {
+    name: "Essential",
+    price: "€30",
+    description:
+      "Perfect for individuals who need a secure mailing address.",
+    buttonText: "Choose Essential",
+    popular: false,
+    features: [
+      "XS SafeBox",
+      "Secure mail reception",
+      "Secure document storage",
+      "Instant SMS arrival notifications",
+      "Mail collection during business hours",
+      "Secure handling of correspondence",
+      "7-day complimentary storage",
+      "Client Portal access",
+    ],
+  },
+  {
+    name: "Select",
+    price: "€60",
+    description:
+      "Ideal for professionals, remote workers and frequent travellers.",
+    buttonText: "Choose Select",
+    popular: false,
+    features: [
+      "Everything in Essential",
+      "S SafeBox",
+      "Small parcel reception",
+      "Extended storage period",
+      "Parcel collection service",
+      "Up to 5 document scans / month",
+      "Digital document delivery",
+      "Mail forwarding available",
+      "Priority document processing",
+    ],
+  },
+  {
+    name: "Signature",
+    price: "€100",
+    description:
+      "Our most popular plan for premium document management.",
+    buttonText: "Choose Signature",
+    popular: true,
+    features: [
+      "Everything in Select",
+      "S SafeBox",
+      "Up to 25 document scans / month",
+      "Storage reminders",
+      "Express digital document delivery",
+      "Extended secure document archive",
+      "Priority document handling",
+      "Priority customer support",
+      "Reduced forwarding fees",
+    ],
+  },
+  {
+    name: "Executive",
+    price: "€180",
+    description:
+      "Complete business correspondence management solution.",
+    buttonText: "Choose Executive",
+    popular: false,
+    features: [
+      "Everything in Signature",
+      "S Business SafeBox",
+      "Multiple authorised users",
+      "Business correspondence reception",
+      "Unlimited document scanning",
+      "Unlimited secure digital archive",
+      "Secure international forwarding",
+      "Monthly activity reports",
+      "Dedicated Account Manager",
+      "Priority Business Support",
+      "Priority handling of all incoming correspondence",
+    ],
+  },
+];
 
 export default function PricingPage() {
   return (
     <>
-        <Navbar />
-        <FloatingButton />
+      <Navbar />
+      <FloatingButton />
 
-        <main className="min-h-screen bg-[#081320] px-6 pb-20 pt-48 text-[#F4F4F2] lg:pt-36">
-
-        <div className="max-w-7xl mx-auto">
-
-            <h1 className="text-4xl font-bold text-center sm:text-5xl md:text-6xl">
-            SafeBox Memberships
-            </h1>
-
-            <p className="text-center text-[#C8A86B] mt-6 tracking-[0.3em] uppercase">
-            Choose the plan that fits your needs
+      <main className="min-h-screen bg-[#081320] px-6 pb-24 pt-48 text-[#F4F4F2] lg:pt-36">
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#C8A86B]">
+              Secure. Private. Professional.
             </p>
 
-            <div className="mt-16 grid gap-8 lg:grid-cols-4">
-            {[
-                {
-                name: "Essential",
-                price: "€24.99",
-                description:
-                    "Perfect for individuals who need a secure location to receive and store important correspondence.",
-                features: [
-                    "Personal SafeBox",
-                    "Secure receipt of correspondence and deliveries",
-                    "Secure storage",
-                    "Arrival notifications",
-                    "Collection during business hours",
-                ],
-                },
-                {
-                name: "Select",
-                price: "€49.99",
-                description:
-                    "Ideal for professionals, frequent travellers and remote workers.",
-                features: [
-                    "Everything in Essential",
-                    "Priority notifications",
-                    "Extended storage period",
-                    "Up to 5 complimentary document scans per month",
-                ],
-                },
-                {
-                name: "Signature",
-                price: "€89.99",
-                popular: true,
-                description:
-                    "Designed for clients who require complete document management.",
-                features: [
-                    "Everything in Select",
-                    "Up to 25 document scans per month",
-                    "Priority document handling",
-                    "Digital Mailroom",
-                    "Extended secure storage",
-                    "Priority customer support",
-                ],
-                },
-                {
-                name: "Executive",
-                price: "€149.99",
-                description:
-                    "A complete correspondence management solution for companies.",
-                features: [
-                    "Business SafeBox",
-                    "Multiple authorised users",
-                    "Receipt of business correspondence and deliveries",
-                    "Unlimited document scanning",
-                    "Digital Mailroom",
-                    "Priority handling",
-                    "Secure document forwarding",
-                    "Monthly activity summary",
-                    "Dedicated business support",
-                ],
-                },
-            ].map((plan) => (
-                <div
+            <h1 className="mt-5 text-4xl font-bold sm:text-5xl md:text-6xl">
+              Choose Your Plan
+            </h1>
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#D6D6D1]">
+              Select the plan that best fits your personal or business needs.
+            </p>
+          </div>
+
+          <div className="mt-16 grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-4">
+            {plans.map((plan) => (
+              <article
                 key={plan.name}
-                className={`relative rounded-3xl p-8 border bg-[#0F1F33] transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/20 ${
-                    plan.popular
+                className={`relative flex h-full flex-col rounded-3xl border bg-[#0F1F33] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/15 ${
+                  plan.popular
                     ? "border-[#C8A86B] shadow-2xl shadow-[#C8A86B]/10"
                     : "border-[#C8A86B]/20"
                 }`}
-                >
+              >
                 {plan.popular && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C8A86B] text-[#081320] px-5 py-2 rounded-full text-xs font-bold tracking-widest">
+                  <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-[#C8A86B] px-5 py-2 text-xs font-bold tracking-widest text-[#081320]">
                     MOST POPULAR
-                    </div>
+                  </div>
                 )}
 
-                <h2 className="text-3xl font-bold text-[#C8A86B]">{plan.name}</h2>
+                <h2 className="text-3xl font-bold uppercase tracking-wide text-[#C8A86B]">
+                  {plan.name}
+                </h2>
 
-                <p className="mt-4 text-4xl font-bold">{plan.price}</p>
-                <p className="text-[#D6D6D1]">/ month</p>
+                <div className="mt-5">
+                  <span className="text-5xl font-bold">{plan.price}</span>
+                  <span className="ml-2 text-[#D6D6D1]">per month</span>
+                </div>
 
-                <p className="mt-6 text-[#D6D6D1] min-h-[96px]">
-                    {plan.description}
+                <p className="mt-6 min-h-[96px] leading-relaxed text-[#D6D6D1]">
+                  {plan.description}
                 </p>
 
-                <a
-                    href={`/?plan=${plan.name}#contact`}
-                    className="mt-8 inline-block w-full text-center bg-[#C8A86B] text-[#081320] px-6 py-3 rounded-full font-bold hover:bg-[#d6b77a] transition"
-                >
-                    Choose {plan.name}
-                </a>
-
-                <ul className="mt-8 space-y-4">
-                    {plan.features.map((feature) => (
-                    <li key={feature} className="flex gap-3 text-[#F4F4F2]">
-                        <span className="text-[#C8A86B]">✓</span>
-                        <span>{feature}</span>
-                    </li>
-                    ))}
-                </ul>
-                </div>
-            ))}
-            </div>
-
-            <section className="mt-24">
-            <h2 className="text-4xl font-bold text-center">Additional Services</h2>
-
-            <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {[
-                ["Document Scanning", "€3.00 per envelope"],
-                ["Express Scanning", "Within 1 hour — €10.00"],
-                ["Secure Document Forwarding", "From €12.00 + shipping costs"],
-                ["International Forwarding", "Price on request"],
-                ["Long-Term Secure Storage", "From €10.00/month"],
-                ["Additional Authorised User", "€10.00/month"],
-                ["Additional SafeBox", "€20.00/month"],
-                ["Oversized Parcel Handling", "From €5.00"],
-                ["Express Parcel Collection", "€15.00"],
-                ["Digital Document Archive", "From €5.00/month"],
-                ].map(([service, price]) => (
-                <div
-                    key={service}
-                    className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6"
-                >
-                    <h3 className="text-[#C8A86B] font-bold">{service}</h3>
-                    <p className="mt-2 text-[#D6D6D1]">{price}</p>
-                </div>
-                ))}
-            </div>
-            </section>
-
-            <section className="mt-24">
-            <h2 className="text-4xl font-bold text-center">Business Add-Ons</h2>
-
-            <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-                {[
-                    {
-                        title: "Multiple collection authorisations",
-                        icon: "/icons/authorised-users.png",
-                    },
-                    {
-                        title: "Team access management",
-                        icon: "/icons/team-access.png",
-                    },
-                    {
-                        title: "Secure document archive",
-                        icon: "/icons/document-archive.png",
-                    },
-                    {
-                        title: "Digital document management",
-                        icon: "/icons/digital-management.png",
-                    },
-                    {
-                        title: "Bulk scanning",
-                        icon: "/icons/bulk-scanning.png",
-                    },
-                    {
-                        title: "Monthly reporting",
-                        icon: "/icons/monthly-reporting.png",
-                    },
-                    {
-                        title: "Priority support",
-                        icon: "/icons/priority-support.png",
-                    },
-                    {
-                        title: "Dedicated account manager",
-                        icon: "/icons/account-manager.png",
-                    },
-                    ].map((item) => (
-                    <div
-                        key={item.title}
-                        className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center"
+                <ul className="mt-8 flex-1 space-y-4">
+                  {plan.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="flex items-start gap-3 text-sm leading-relaxed"
                     >
-                        <Image
-                        src={item.icon}
-                        alt={item.title}
-                        width={32}
-                        height={32}
-                        className="mx-auto object-contain"
-                        />
+                      <span className="mt-[2px] font-bold text-[#C8A86B]">
+                        ✓
+                      </span>
 
-                        <p className="mt-3">{item.title}</p>
-                    </div>
-                    ))}
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href={`/?plan=${encodeURIComponent(plan.name)}#contact`}
+                  className={`mt-10 block rounded-full px-6 py-4 text-center font-bold transition hover:-translate-y-1 ${
+                    plan.popular
+                      ? "bg-[#C8A86B] text-[#081320] shadow-lg shadow-[#C8A86B]/20 hover:bg-[#D6B979]"
+                      : "border border-[#C8A86B]/60 text-[#F4F4F2] hover:border-[#C8A86B] hover:bg-[#C8A86B]/10"
+                  }`}
+                >
+                  {plan.buttonText}
+                </a>
+              </article>
+            ))}
+          </div>
+                    {/* Additional Services */}
+          <section className="mt-24">
+            <div className="text-center">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#C8A86B]">
+                Flexible Extras
+              </p>
+
+              <h2 className="mt-5 text-4xl font-bold sm:text-5xl">
+                Additional Services
+              </h2>
+
+              <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#D6D6D1]">
+                Enhance your SafeBox membership with optional scanning,
+                forwarding, secure storage and collection services tailored to
+                your needs.
+              </p>
             </div>
-            </section>
 
-            <section className="mt-24 rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-10 text-center">
-            <h2 className="text-4xl font-bold">Need help choosing?</h2>
+            <div className="mt-16 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+              {[
+                {
+                  title: "Document Scanning",
+                  icon: "/icons/document-scanning.png",
+                  description:
+                    "Convert incoming correspondence and documents into secure digital copies.",
+                  price: "€3.00 per envelope",
+                },
+                {
+                  title: "Express Scanning",
+                  icon: "/icons/express-scanning.png",
+                  description:
+                    "Receive an urgent digital copy of your document within one hour.",
+                  price: "€10.00",
+                },
+                {
+                  title: "Secure Document Forwarding",
+                  icon: "/icons/document.png",
+                  description:
+                    "Forward correspondence and important documents to your chosen destination.",
+                  price: "From €12.00 + shipping",
+                },
+                {
+                  title: "International Forwarding",
+                  icon: "/icons/delivery.png",
+                  description:
+                    "Worldwide forwarding for correspondence, documents and eligible parcels.",
+                  price: "Price on request",
+                },
+                {
+                  title: "Long-Term Secure Storage",
+                  icon: "/icons/long-term-storage.png",
+                  description:
+                    "Keep your documents and eligible items securely stored for an extended period.",
+                  price: "From €10.00 / month",
+                },
+                {
+                  title: "Additional Authorised User",
+                  icon: "/icons/additional-user.png",
+                  description:
+                    "Authorise another trusted person to collect items from your SafeBox.",
+                  price: "€10.00 / month",
+                },
+                {
+                  title: "Additional SafeBox",
+                  icon: "/icons/additional-safebox.png",
+                  description:
+                    "Add another SafeBox to your existing membership when you need more capacity.",
+                  price: "€20.00 / month",
+                },
+                {
+                  title: "Oversized Parcel Handling",
+                  icon: "/icons/oversized-parcel.png",
+                  description:
+                    "Receive and securely manage larger deliveries that require special handling.",
+                  price: "From €5.00",
+                },
+                {
+                  title: "Express Parcel Collection",
+                  icon: "/icons/express-collection.png",
+                  description:
+                    "Priority preparation and handling for urgent parcel collection.",
+                  price: "€15.00",
+                },
+                {
+                  title: "Digital Document Archive",
+                  icon: "/icons/digital-archive.png",
+                  description:
+                    "Store scanned documents in a secure and organised digital archive.",
+                  price: "From €5.00 / month",
+                },
+              ].map((service) => (
+                <article
+                  key={service.title}
+                  className="flex h-full flex-col rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
+                >
+                  <div className="flex justify-center">
+                    <Image
+                      src={service.icon}
+                      alt={service.title}
+                      width={90}
+                      height={90}
+                      className="h-10 w-10 object-contain"
+                    />
+                  </div>
 
-            <p className="mt-4 text-[#D6D6D1]">
-                Book a consultation and we will help you choose the right SafeBox membership.
+                  <h3 className="mt-6 text-xl font-bold text-[#C8A86B]">
+                    {service.title}
+                  </h3>
+
+                  <p className="mt-4 flex-1 leading-relaxed text-[#D6D6D1]">
+                    {service.description}
+                  </p>
+
+                  <p className="mt-6 text-lg font-bold text-[#C8A86B]">
+                    {service.price}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* Business Add-Ons */}
+          <section className="mt-28">
+            <div className="text-center">
+              <p className="text-sm uppercase tracking-[0.35em] text-[#C8A86B]">
+                Business Solutions
+              </p>
+
+              <h2 className="mt-5 text-4xl font-bold sm:text-5xl">
+                Business Add-Ons
+              </h2>
+
+              <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-[#D6D6D1]">
+                Advanced options for companies that require secure team access,
+                document management, reporting and dedicated support.
+              </p>
+            </div>
+
+            <div className="mt-16 grid gap-7 md:grid-cols-2 lg:grid-cols-4">
+              {[
+                {
+                  title: "Multiple Collection Authorisations",
+                  icon: "/icons/additional-user.png",
+                  description:
+                    "Allow several approved people to collect correspondence and deliveries.",
+                },
+                {
+                  title: "Team Access Management",
+                  icon: "/icons/team-access.png",
+                  description:
+                    "Manage authorised users and access permissions for your organisation.",
+                },
+                {
+                  title: "Secure Document Archive",
+                  icon: "/icons/archive.png",
+                  description:
+                    "Keep important business records securely organised and accessible.",
+                },
+                {
+                  title: "Digital Document Management",
+                  icon: "/icons/digital-archive.png",
+                  description:
+                    "Receive, organise and manage business documents digitally.",
+                },
+                {
+                  title: "Bulk Scanning",
+                  icon: "/icons/document-scanning.png",
+                  description:
+                    "Digitise larger volumes of documents efficiently and securely.",
+                },
+                {
+                  title: "Monthly Reporting",
+                  icon: "/icons/monthly-reporting.png",
+                  description:
+                    "Receive a monthly summary of correspondence, scans and activity.",
+                },
+                {
+                  title: "Priority Support",
+                  icon: "/icons/priority-support.png",
+                  description:
+                    "Receive faster assistance for urgent operational requests.",
+                },
+                {
+                  title: "Dedicated Account Manager",
+                  icon: "/icons/professionalism.png",
+                  description:
+                    "A single professional contact for your company’s SafeBox needs.",
+                },
+              ].map((item) => (
+                <article
+                  key={item.title}
+                  className="flex h-full flex-col rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-7 text-center transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
+                >
+                  <div className="flex justify-center">
+                    <Image
+                      src={item.icon}
+                      alt={item.title}
+                      width={90}
+                      height={90}
+                      className="h-10 w-10 object-contain"
+                    />
+                  </div>
+
+                  <h3 className="mt-6 text-lg font-bold text-[#C8A86B]">
+                    {item.title}
+                  </h3>
+
+                  <p className="mt-4 flex-1 leading-relaxed text-[#D6D6D1]">
+                    {item.description}
+                  </p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          <section className="mt-20 rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-8 text-center sm:p-12">
+            <p className="text-sm uppercase tracking-[0.35em] text-[#C8A86B]">
+              Flexible SafeBox Sizes
+            </p>
+
+            <h2 className="mt-5 text-4xl font-bold">
+              Need More Space?
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-[#D6D6D1]">
+              Upgrade your SafeBox size anytime as your needs grow.
             </p>
 
             <a
-                href="/#contact"
-                className="mt-8 inline-block bg-[#C8A86B] text-[#081320] px-10 py-4 rounded-full font-bold hover:bg-[#d6b77a] transition"
+              href="/#contact"
+              className="mt-8 inline-block rounded-full bg-[#C8A86B] px-10 py-4 font-bold text-[#081320] transition hover:-translate-y-1 hover:bg-[#D6B979]"
             >
-                Book a Consultation
+              Ask About SafeBox Sizes
             </a>
-            </section>
+          </section>
         </div>
-        </main>
-        <Footer/>
-    </>    
+      </main>
+
+      <Footer />
+    </>
   );
 }

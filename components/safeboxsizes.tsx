@@ -1,6 +1,6 @@
 const sizes = [
   {
-    title: "Personal SafeBox",
+    title: "Small SafeBox",
     size: "XS / S",
     description:
       "Ideal for correspondence, important documents and everyday personal storage.",
@@ -15,13 +15,7 @@ const sizes = [
     title: "Large SafeBox",
     size: "L / XL",
     description:
-      "Designed for oversized deliveries, equipment, archive storage and larger items.",
-  },
-  {
-    title: "Business SafeBox",
-    size: "Business",
-    description:
-      "Secure storage and correspondence management for companies and authorised teams.",
+      "Designed for large deliveries, equipment, archive storage and larger items.",
   },
 ];
 
@@ -38,25 +32,25 @@ export default function SafeBoxSizes() {
         </h2>
 
         <p className="mx-auto mt-6 max-w-3xl text-center text-lg leading-relaxed text-[#D6D6D1]">
-          Choose a SafeBox size that matches your personal, professional or
-          business needs.
+          Choose the SafeBox size that best matches your personal or
+          professional needs.
         </p>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-14 grid max-w-5xl gap-8 md:grid-cols-3">
           {sizes.map((item) => (
             <div
               key={item.title}
-              className="rounded-3xl border border-[#C8A86B]/20 bg-[#081320] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
+              className="flex min-h-[360px] flex-col rounded-3xl border border-[#C8A86B]/20 bg-[#081320] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
             >
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#C8A86B]/40 bg-[#0F1F33] text-xl font-bold text-[#C8A86B]">
+              <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-[#C8A86B]/40 bg-[#0F1F33] px-3 text-center text-lg font-bold leading-tight text-[#C8A86B]">
                 {item.size}
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold text-[#C8A86B]">
+              <h3 className="mt-8 text-2xl font-bold text-[#C8A86B]">
                 {item.title}
               </h3>
 
-              <p className="mt-4 leading-relaxed text-[#D6D6D1]">
+              <p className="mt-5 text-lg leading-relaxed text-[#D6D6D1]">
                 {item.description}
               </p>
             </div>
@@ -64,8 +58,8 @@ export default function SafeBoxSizes() {
         </div>
 
         <p className="mx-auto mt-12 max-w-4xl text-center text-lg leading-relaxed text-[#F4F4F2]">
-          From important documents to oversized deliveries, SafeBox offers
-          secure storage solutions tailored to your needs.
+          Business memberships can be paired with any SafeBox size depending on
+          the volume of correspondence, documents or deliveries required.
         </p>
       </div>
     </section>

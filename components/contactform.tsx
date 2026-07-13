@@ -32,12 +32,12 @@ export default function ContactForm() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
             <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                <div className="flex justify-center mb-6">
                     <Image
-                        src="/icons/personal-advice.png"
+                        src="/icons/team-access.png"
                         alt="Personal Advice"
-                        width={30}
-                        height={30}
+                        width={59}
+                        height={59}
                         className="object-contain"
                     />
                 </div>
@@ -52,12 +52,12 @@ export default function ContactForm() {
             </div>
 
             <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                <div className="flex justify-center mb-6">
                 <Image
-                    src="/icons/secure-confidential.png"
+                    src="/icons/secure.png"
                     alt="Secure and Confidential"
-                    width={30}
-                    height={30}
+                    width={59}
+                    height={59}
                     className="object-contain"
                 />
                 </div>
@@ -72,12 +72,12 @@ export default function ContactForm() {
             </div>
 
             <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#C8A86B]/30 bg-[#081320]">
+                <div className="flex justify-center mb-6">
                 <Image
-                    src="/icons/fast-response.png"
+                    src="/icons/priority-support.png"
                     alt="Fast Response"
-                    width={30}
-                    height={30}
+                    width={59}
+                    height={59}
                     className="object-contain"
                 />
                 </div>

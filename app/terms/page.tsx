@@ -51,7 +51,7 @@ export default function TermsPage() {
               <div className="mt-4 rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6">
                 <p>
                   <strong className="text-white">Company:</strong>{" "}
-                  [INSERT LEGAL COMPANY NAME]
+                  [SAFEBOX]
                 </p>
 
                 <p>
@@ -66,7 +66,7 @@ export default function TermsPage() {
 
                 <p>
                   <strong className="text-white">Email:</strong>{" "}
-                  [INSERT CONTACT EMAIL]
+                  [contactsafebox2026@gmail.com]
                 </p>
               </div>
             </section>

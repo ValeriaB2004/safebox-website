@@ -1,23 +1,23 @@
 const plans = [
   {
     name: "Essential",
-    price: "€24.99",
+    price: "€30",
     description: "Perfect for individuals who need a secure private box.",
   },
   {
     name: "Select",
-    price: "€49.99",
+    price: "€60",
     description: "Ideal for professionals and frequent travellers.",
   },
   {
     name: "Signature",
-    price: "€89.99",
+    price: "€100",
     description: "Complete document and private box management.",
     popular: true,
   },
   {
     name: "Executive",
-    price: "€149.99",
+    price: "€180",
     description: "Full business correspondence management.",
   },
 ];
