@@ -1,11 +1,25 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
 export default function ContactForm() {
   const searchParams = useSearchParams();
   const selectedPlan = searchParams.get("plan");
+
+  useEffect(() => {
+    if (!selectedPlan) return;
+
+    const timer = window.setTimeout(() => {
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 150);
+
+    return () => window.clearTimeout(timer);
+  }, [selectedPlan]);
 
   const message = selectedPlan
     ? `Hello, I am interested in the SafeBox ${selectedPlan} membership. Please contact me with more information.`
