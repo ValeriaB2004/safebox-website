@@ -32,7 +32,7 @@ const plans = [
     popular: false,
     features: [
       "Everything in Essential",
-      "S SafeBox",
+      "Choose between XS and S SafeBox, and ability to upgrade",
       "Small parcel reception",
       "Extended storage period",
       "Parcel collection service",
@@ -51,7 +51,7 @@ const plans = [
     popular: true,
     features: [
       "Everything in Select",
-      "S SafeBox",
+      "Choose between XS and S SafeBox, and ability to upgrade",
       "Up to 25 document scans / month",
       "Storage reminders",
       "Express digital document delivery",
@@ -70,7 +70,7 @@ const plans = [
     popular: false,
     features: [
       "Everything in Signature",
-      "S Business SafeBox",
+      "Choose between XS and S SafeBox, and ability to upgrade",
       "Multiple authorised users",
       "Business correspondence reception",
       "Unlimited document scanning",
