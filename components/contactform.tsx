@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
+  const t = useTranslations("ContactForm");
   const searchParams = useSearchParams();
   const selectedPlan = searchParams.get("plan");
 
@@ -22,89 +24,70 @@ export default function ContactForm() {
   }, [selectedPlan]);
 
   const message = selectedPlan
-    ? `Hello, I am interested in the SafeBox ${selectedPlan} membership. Please contact me with more information.`
+    ? t("selectedPlanMessage", { plan: selectedPlan })
     : "";
 
+  const benefits = [
+    {
+      icon: "/icons/team-access.png",
+      title: t("benefits.advice.title"),
+      description: t("benefits.advice.description"),
+    },
+    {
+      icon: "/icons/secure.png",
+      title: t("benefits.confidential.title"),
+      description: t("benefits.confidential.description"),
+    },
+    {
+      icon: "/icons/priority-support.png",
+      title: t("benefits.response.title"),
+      description: t("benefits.response.description"),
+    },
+  ];
+
   return (
-    <section id="contact" className="px-6 py-24 bg-[#0F1F33]">
-      <div className="max-w-3xl mx-auto bg-[#081320] border border-[#C8A86B]/20 rounded-3xl p-6 sm:p-10">
+    <section id="contact" className="bg-[#0F1F33] px-6 py-24">
+      <div className="mx-auto max-w-3xl rounded-3xl border border-[#C8A86B]/20 bg-[#081320] p-6 sm:p-10">
         <div className="text-center">
-          <p className="uppercase tracking-[0.35em] text-sm text-[#C8A86B]">
-              We're here to help
+          <p className="text-sm uppercase tracking-[0.35em] text-[#C8A86B]">
+            {t("eyebrow")}
           </p>
 
-          <h2 className="mt-5 text-4xl md:text-5xl font-bold">
-              Need Help Choosing the Right SafeBox?
+          <h2 className="mt-5 text-4xl font-bold md:text-5xl">
+            {t("title")}
           </h2>
 
-          <p className="mt-6 max-w-2xl mx-auto text-lg leading-relaxed text-[#D6D6D1]">
-              Whether you're looking for a secure place for personal correspondence,
-              business documents, parcels or long-term storage, our team will help you
-              choose the ideal SafeBox size and membership.
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#D6D6D1]">
+            {t("description")}
           </p>
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-                <div className="flex justify-center mb-6">
-                    <Image
-                        src="/icons/team-access.png"
-                        alt="Personal Advice"
-                        width={59}
-                        height={59}
-                        className="object-contain"
-                    />
-                </div>
-
-                <h3 className="mt-4 font-bold text-[#C8A86B]">
-                Personal Advice
-                </h3>
-
-                <p className="mt-3 text-[#D6D6D1]">
-                We&apos;ll recommend the most suitable SafeBox solution.
-                </p>
-            </div>
-
-            <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-                <div className="flex justify-center mb-6">
+          {benefits.map((benefit) => (
+            <div
+              key={benefit.title}
+              className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center"
+            >
+              <div className="mb-6 flex justify-center">
                 <Image
-                    src="/icons/secure.png"
-                    alt="Secure and Confidential"
-                    width={59}
-                    height={59}
-                    className="object-contain"
+                  src={benefit.icon}
+                  alt={benefit.title}
+                  width={59}
+                  height={59}
+                  className="object-contain"
                 />
-                </div>
+              </div>
 
-                <h3 className="mt-4 font-bold text-[#C8A86B]">
-                Secure &amp; Confidential
-                </h3>
+              <h3 className="mt-4 font-bold text-[#C8A86B]">
+                {benefit.title}
+              </h3>
 
-                <p className="mt-3 text-[#D6D6D1]">
-                Every enquiry is handled confidentially.
-                </p>
+              <p className="mt-3 text-[#D6D6D1]">
+                {benefit.description}
+              </p>
             </div>
-
-            <div className="rounded-2xl border border-[#C8A86B]/20 bg-[#0F1F33] p-6 text-center">
-                <div className="flex justify-center mb-6">
-                <Image
-                    src="/icons/priority-support.png"
-                    alt="Fast Response"
-                    width={59}
-                    height={59}
-                    className="object-contain"
-                />
-                </div>
-
-                <h3 className="mt-4 font-bold text-[#C8A86B]">
-                Fast Response
-                </h3>
-
-                <p className="mt-3 text-[#D6D6D1]">
-                We aim to respond within one business day.
-                </p>
-            </div>
-            </div>
+          ))}
+        </div>
 
         <form
           action="https://formspree.io/f/mzdllloa"
@@ -113,54 +96,53 @@ export default function ContactForm() {
         >
           <input
             name="name"
-            className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
-            placeholder="Name"
+            className="rounded-xl border border-[#C8A86B]/40 bg-[#0F1F33] p-4 text-white placeholder-[#C8C8C8]"
+            placeholder={t("fields.name")}
             required
           />
 
           <input
             name="email"
             type="email"
-            className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
-            placeholder="Email"
+            className="rounded-xl border border-[#C8A86B]/40 bg-[#0F1F33] p-4 text-white placeholder-[#C8C8C8]"
+            placeholder={t("fields.email")}
             required
           />
 
           <input
             name="phone"
             type="tel"
-            className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
-            placeholder="Phone"
+            className="rounded-xl border border-[#C8A86B]/40 bg-[#0F1F33] p-4 text-white placeholder-[#C8C8C8]"
+            placeholder={t("fields.phone")}
           />
-        
-        <select
+
+          <select
             name="membership"
             defaultValue={selectedPlan || ""}
-            className="p-4 rounded-xl bg-[#0F1F33] text-white border border-[#C8A86B]/40"
-        >
-            <option value="">Which membership are you interested in?</option>
-
+            className="rounded-xl border border-[#C8A86B]/40 bg-[#0F1F33] p-4 text-white"
+          >
+            <option value="">{t("fields.membershipPlaceholder")}</option>
             <option value="Essential">Essential</option>
             <option value="Select">Select</option>
             <option value="Signature">Signature</option>
             <option value="Executive">Executive</option>
-            <option value="Not sure yet">Not sure yet</option>
-        </select>
+            <option value="Not sure yet">{t("fields.notSure")}</option>
+          </select>
 
           <textarea
             name="message"
-            className="p-4 rounded-xl bg-[#0F1F33] text-white placeholder-[#C8C8C8] border border-[#C8A86B]/40"
+            className="rounded-xl border border-[#C8A86B]/40 bg-[#0F1F33] p-4 text-white placeholder-[#C8C8C8]"
             rows={5}
-            placeholder="Message"
+            placeholder={t("fields.message")}
             defaultValue={message}
             required
           />
 
           <button
             type="submit"
-            className="bg-[#C8A86B] text-[#081320] p-4 rounded-xl font-bold"
+            className="rounded-xl bg-[#C8A86B] p-4 font-bold text-[#081320] transition hover:-translate-y-1 hover:bg-[#D6B979]"
           >
-            Send Message
+            {t("submit")}
           </button>
         </form>
       </div>

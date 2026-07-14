@@ -1,0 +1,101 @@
+{
+  "Terms": {
+    "metaTitle": "Terms & Conditions | SafeBox",
+    "metaDescription": "Terms and conditions governing access to the SafeBox website and enquiries about SafeBox services.",
+    "eyebrow": "Legal information",
+    "title": "Terms & Conditions",
+    "updated": "Last updated: July 2026",
+    "sections": {
+      "about": {
+        "title": "1. About These Terms",
+        "paragraphs": [
+          "These Terms & Conditions govern your access to and use of the SafeBox website. By using this website, you agree to these terms."
+        ]
+      },
+      "operator": {
+        "title": "2. Website Operator",
+        "introduction": "This website is operated by:",
+        "company": "Company",
+        "taxNumber": "Tax number",
+        "address": "Registered address",
+        "email": "Email"
+      },
+      "websiteInformation": {
+        "title": "3. Website Information",
+        "paragraphs": [
+          "The information presented on this website is provided for general informational and promotional purposes. It describes SafeBox services, memberships and optional additional services.",
+          "Website content does not itself constitute a binding service agreement, reservation or guarantee of availability."
+        ]
+      },
+      "membershipEnquiries": {
+        "title": "4. Membership Enquiries",
+        "paragraphs": [
+          "Submitting an enquiry or selecting a membership on this website does not automatically create a subscription or contractual relationship.",
+          "A membership becomes effective only after customer identification, confirmation of availability, acceptance of the applicable service agreement and completion of any required payment."
+        ]
+      },
+      "prices": {
+        "title": "5. Prices and Availability",
+        "paragraphs": [
+          "Prices displayed on the website may be updated. Applicable taxes, delivery charges, forwarding costs and additional service charges will be communicated before the customer enters into a binding agreement.",
+          "Memberships, SafeBox sizes and additional services remain subject to availability."
+        ]
+      },
+      "permittedUse": {
+        "title": "6. Permitted Use",
+        "paragraphs": [
+          "Users must not misuse this website, attempt to gain unauthorised access, interfere with its operation, submit false information or use the website for unlawful purposes."
+        ]
+      },
+      "prohibitedItems": {
+        "title": "7. Prohibited Items",
+        "paragraphs": [
+          "SafeBox services must not be used for illegal goods, dangerous items, hazardous materials, weapons, prohibited cash, perishable goods or any item restricted by law or by the applicable service agreement.",
+          "The definitive list of accepted and prohibited items will be stated in the customer service agreement."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "8. Intellectual Property",
+        "paragraphs": [
+          "The SafeBox name, logo, visual identity, website design, text, graphics and other website content are protected by applicable intellectual-property laws.",
+          "They may not be copied, distributed, reproduced or used for commercial purposes without prior written permission."
+        ]
+      },
+      "thirdPartyServices": {
+        "title": "9. Third-Party Services",
+        "paragraphs": [
+          "The website may use or link to third-party services, including form-processing, hosting, analytics, mapping, calendar or payment providers. Those services may be governed by their own terms and privacy policies."
+        ]
+      },
+      "availability": {
+        "title": "10. Website Availability",
+        "paragraphs": [
+          "We aim to keep the website accurate and available, but we do not guarantee uninterrupted operation or that all information will always be free from errors.",
+          "We may modify, suspend or withdraw website content when reasonably necessary."
+        ]
+      },
+      "liability": {
+        "title": "11. Limitation of Liability",
+        "paragraphs": [
+          "To the maximum extent permitted by law, the website operator is not responsible for indirect loss resulting solely from use of, or inability to access, this informational website.",
+          "Nothing in these terms excludes liability that cannot legally be excluded or limits mandatory consumer rights."
+        ]
+      },
+      "privacy": {
+        "title": "12. Privacy",
+        "beforeLink": "Personal information submitted through the website is handled in accordance with our",
+        "link": "Privacy Policy"
+      },
+      "law": {
+        "title": "13. Applicable Law",
+        "paragraphs": [
+          "These terms are governed by Spanish law, without prejudice to any mandatory rights or jurisdiction available to consumers under applicable law."
+        ]
+      },
+      "contact": {
+        "title": "14. Contact",
+        "text": "Questions regarding these Terms & Conditions may be sent through the contact form on the SafeBox website."
+      }
+    }
+  }
+}

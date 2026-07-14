@@ -1,0 +1,19 @@
+{
+  "Navbar": {
+    "solutions": "Решения",
+    "sizes": "Размеры",
+    "whoItsFor": "Для кого",
+    "howItWorks": "Как это работает",
+    "memberships": "Тарифы",
+    "fullPricing": "Все тарифы",
+    "contact": "Контакты",
+    "bookConsultation": "Записаться на консультацию",
+    "tagline": "Безопасные персональные боксы"
+  },
+  "LanguageSwitcher": {
+    "english": "EN",
+    "spanish": "ES",
+    "russian": "RU",
+    "label": "Изменить язык"
+  }
+}

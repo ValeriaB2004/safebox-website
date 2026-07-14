@@ -1,0 +1,85 @@
+{
+  "Cookies": {
+    "metaTitle": "Cookie Policy | SafeBox",
+    "metaDescription": "Information about cookies and similar technologies used on the SafeBox website.",
+    "eyebrow": "Website information",
+    "title": "Cookie Policy",
+    "updated": "Last updated: July 2026",
+    "sections": {
+      "definition": {
+        "title": "1. What Are Cookies?",
+        "text": "Cookies are small data files that a website may store on a visitor’s device. They may support essential website functions, remember preferences, measure performance or enable third-party services."
+      },
+      "currentUse": {
+        "title": "2. Technologies Currently Used",
+        "paragraphs": [
+          "The SafeBox website currently uses only the technologies reasonably necessary for website operation, security and contact-form submission.",
+          "SafeBox does not currently use advertising cookies or behavioural profiling technologies."
+        ],
+        "table": {
+          "category": "Category",
+          "purpose": "Purpose",
+          "status": "Status",
+          "rows": {
+            "essential": {
+              "category": "Essential technologies",
+              "purpose": "Website operation, security, navigation and technical delivery.",
+              "status": "Required for website operation"
+            },
+            "forms": {
+              "category": "Contact-form services",
+              "purpose": "Processing contact enquiries and helping prevent automated spam submissions.",
+              "status": "Used when the contact form is submitted"
+            },
+            "analytics": {
+              "category": "Analytics",
+              "purpose": "Measuring website use and performance.",
+              "status": "Not currently enabled"
+            },
+            "advertising": {
+              "category": "Advertising",
+              "purpose": "Personalised advertising, profiling or cross-site tracking.",
+              "status": "Not currently enabled"
+            }
+          }
+        }
+      },
+      "thirdParty": {
+        "title": "3. Third-Party Technical Services",
+        "paragraphs": [
+          "The website is available through the official SafeBox domain and may rely on specialist technical providers for hosting, security, email delivery and website infrastructure.",
+          "The contact form currently uses Formspree to process submissions. When a visitor submits the form, limited technical and contact information may be processed as necessary to deliver the enquiry.",
+          "If SafeBox introduces analytics, embedded maps, appointment booking, video, customer accounts, online payments or other third-party functionality, this policy will be updated before or when those technologies are activated."
+        ]
+      },
+      "consent": {
+        "title": "4. Cookie Consent",
+        "paragraphs": [
+          "Technologies that are strictly necessary for the website to function may be used without optional consent where permitted by law.",
+          "Optional cookies or similar technologies requiring consent will not be activated unless the visitor has received appropriate information and has made a valid choice."
+        ]
+      },
+      "management": {
+        "title": "5. Managing Cookies",
+        "paragraphs": [
+          "Visitors can control or delete cookies through their browser settings.",
+          "Blocking essential technical functions may affect the availability or correct operation of certain parts of the website.",
+          "Where SafeBox introduces a cookie-preference panel, visitors will also be able to review or change their preferences through that tool."
+        ]
+      },
+      "changes": {
+        "title": "6. Changes to This Policy",
+        "paragraphs": [
+          "SafeBox may update this Cookie Policy when website functionality, technical providers or legal requirements change.",
+          "The latest version will always be published on this page together with its revision date."
+        ]
+      },
+      "contact": {
+        "title": "7. Contact",
+        "paragraphs": [
+          "Questions concerning this Cookie Policy may be submitted through the contact form on the SafeBox website or sent to contactsafebox2026@gmail.com."
+        ]
+      }
+    }
+  }
+}

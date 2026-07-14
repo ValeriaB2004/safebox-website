@@ -1,0 +1,174 @@
+{
+  "PricingPage": {
+    "eyebrow": "Seguro. Privado. Profesional.",
+    "title": "Elija su plan",
+    "description": "Seleccione el plan que mejor se adapte a sus necesidades personales o empresariales.",
+    "mostPopular": "Más popular",
+    "perMonth": "al mes",
+    "plans": {
+      "essential": {
+        "description": "Perfecto para particulares que necesitan una dirección segura para recibir correspondencia.",
+        "button": "Elegir Essential",
+        "features": {
+          "1": "SafeBox XS",
+          "2": "Recepción segura de correspondencia",
+          "3": "Almacenamiento seguro de documentos",
+          "4": "Notificaciones instantáneas por SMS",
+          "5": "Recogida durante el horario comercial",
+          "6": "Gestión segura de la correspondencia",
+          "7": "7 días de almacenamiento gratuito",
+          "8": "Acceso al Portal del Cliente"
+        }
+      },
+      "select": {
+        "description": "Ideal para profesionales, trabajadores remotos y viajeros frecuentes.",
+        "button": "Elegir Select",
+        "features": {
+          "1": "Todo lo incluido en Essential",
+          "2": "Elección entre SafeBox XS y S, con posibilidad de ampliación",
+          "3": "Recepción de pequeños paquetes",
+          "4": "Periodo de almacenamiento ampliado",
+          "5": "Servicio de recogida de paquetes",
+          "6": "Hasta 5 escaneos de documentos al mes",
+          "7": "Entrega digital de documentos",
+          "8": "Servicio de reenvío disponible",
+          "9": "Procesamiento prioritario de documentos"
+        }
+      },
+      "signature": {
+        "description": "Nuestro plan más popular para una gestión premium de documentos.",
+        "button": "Elegir Signature",
+        "features": {
+          "1": "Todo lo incluido en Select",
+          "2": "Elección entre SafeBox XS y S, con posibilidad de ampliación",
+          "3": "Hasta 25 escaneos de documentos al mes",
+          "4": "Recordatorios de almacenamiento",
+          "5": "Entrega digital exprés de documentos",
+          "6": "Archivo seguro ampliado",
+          "7": "Gestión prioritaria de documentos",
+          "8": "Atención al cliente prioritaria",
+          "9": "Tarifas reducidas de reenvío"
+        }
+      },
+      "executive": {
+        "description": "Una solución completa para la gestión de correspondencia empresarial.",
+        "button": "Elegir Executive",
+        "features": {
+          "1": "Todo lo incluido en Signature",
+          "2": "Elección entre SafeBox XS y S, con posibilidad de ampliación",
+          "3": "Varios usuarios autorizados",
+          "4": "Recepción de correspondencia empresarial",
+          "5": "Escaneo ilimitado de documentos",
+          "6": "Archivo digital seguro ilimitado",
+          "7": "Reenvío internacional seguro",
+          "8": "Informes mensuales de actividad",
+          "9": "Gestor de cuenta dedicado",
+          "10": "Soporte empresarial prioritario",
+          "11": "Gestión prioritaria de toda la correspondencia recibida"
+        }
+      }
+    },
+    "additionalServices": {
+      "eyebrow": "Servicios flexibles",
+      "title": "Servicios adicionales",
+      "description": "Personalice su plan SafeBox con servicios opcionales de escaneo, reenvío, almacenamiento seguro y recogida.",
+      "items": {
+        "documentScanning": {
+          "title": "Escaneo de documentos",
+          "description": "Convierta la correspondencia y los documentos recibidos en copias digitales seguras.",
+          "price": "€3,00 por sobre"
+        },
+        "expressScanning": {
+          "title": "Escaneo exprés",
+          "description": "Reciba una copia digital urgente de su documento en el plazo de una hora.",
+          "price": "€10,00"
+        },
+        "documentForwarding": {
+          "title": "Reenvío seguro de documentos",
+          "description": "Reenvíe correspondencia y documentos importantes al destino que elija.",
+          "price": "Desde €12,00 + gastos de envío"
+        },
+        "internationalForwarding": {
+          "title": "Reenvío internacional",
+          "description": "Reenvío mundial de correspondencia, documentos y paquetes admitidos.",
+          "price": "Precio bajo consulta"
+        },
+        "longTermStorage": {
+          "title": "Almacenamiento seguro a largo plazo",
+          "description": "Mantenga documentos y artículos admitidos almacenados de forma segura durante periodos prolongados.",
+          "price": "Desde €10,00 al mes"
+        },
+        "additionalUser": {
+          "title": "Usuario autorizado adicional",
+          "description": "Autorice a otra persona de confianza a recoger artículos de su SafeBox.",
+          "price": "€10,00 al mes"
+        },
+        "additionalSafeBox": {
+          "title": "SafeBox adicional",
+          "description": "Añada otro SafeBox a su plan cuando necesite mayor capacidad.",
+          "price": "€20,00 al mes"
+        },
+        "oversizedParcel": {
+          "title": "Gestión de paquetes voluminosos",
+          "description": "Reciba y gestione de forma segura entregas grandes que requieran un tratamiento especial.",
+          "price": "Desde €5,00"
+        },
+        "expressCollection": {
+          "title": "Recogida exprés de paquetes",
+          "description": "Preparación y gestión prioritaria para la recogida urgente de paquetes.",
+          "price": "€15,00"
+        },
+        "digitalArchive": {
+          "title": "Archivo digital de documentos",
+          "description": "Guarde los documentos escaneados en un archivo digital seguro y organizado.",
+          "price": "Desde €5,00 al mes"
+        }
+      }
+    },
+    "businessAddOns": {
+      "eyebrow": "Soluciones empresariales",
+      "title": "Servicios adicionales para empresas",
+      "description": "Opciones avanzadas para empresas que necesitan acceso de equipos, gestión documental, informes y soporte dedicado.",
+      "items": {
+        "collectionAuthorisations": {
+          "title": "Múltiples autorizaciones de recogida",
+          "description": "Permita que varias personas autorizadas recojan correspondencia y entregas."
+        },
+        "teamAccess": {
+          "title": "Gestión de acceso del equipo",
+          "description": "Gestione usuarios autorizados y permisos de acceso para su organización."
+        },
+        "secureArchive": {
+          "title": "Archivo seguro de documentos",
+          "description": "Mantenga los documentos empresariales importantes organizados, protegidos y accesibles."
+        },
+        "digitalManagement": {
+          "title": "Gestión digital de documentos",
+          "description": "Reciba, organice y gestione digitalmente los documentos empresariales."
+        },
+        "bulkScanning": {
+          "title": "Escaneo por volumen",
+          "description": "Digitalice grandes cantidades de documentos de forma eficaz y segura."
+        },
+        "monthlyReporting": {
+          "title": "Informes mensuales",
+          "description": "Reciba un resumen mensual de la correspondencia, los escaneos y la actividad."
+        },
+        "prioritySupport": {
+          "title": "Soporte prioritario",
+          "description": "Reciba asistencia más rápida para solicitudes operativas urgentes."
+        },
+        "accountManager": {
+          "title": "Gestor de cuenta dedicado",
+          "description": "Un único contacto profesional para todas las necesidades SafeBox de su empresa."
+        }
+      }
+    },
+    "moreSpace": {
+      "eyebrow": "Tamaños SafeBox flexibles",
+      "title": "¿Necesita más espacio?",
+      "description": "Amplíe el tamaño de su SafeBox en cualquier momento según crezcan sus necesidades, sujeto a disponibilidad.",
+      "button": "Consultar tamaños SafeBox"
+    }
+  }
+}

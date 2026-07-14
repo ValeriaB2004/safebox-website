@@ -1,55 +1,59 @@
-import Image from "next/image";
+"use client";
 
-const items = [
-  {
-    icon: "/icons/mail.png",
-    title: "Correspondence",
-  },
-  {
-    icon: "/icons/document.png",
-    title: "Important Documents",
-  },
-  {
-    icon: "/icons/parcel.png",
-    title: "Parcels",
-  },
-  {
-    icon: "/icons/business.png",
-    title: "Business Records",
-  },
-  {
-    icon: "/icons/key.png",
-    title: "Keys",
-  },
-  {
-    icon: "/icons/secure.png",
-    title: "Confidential Items",
-  },
-  {
-    icon: "/icons/archive.png",
-    title: "Archives",
-  },
-  {
-    icon: "/icons/delivery.png",
-    title: "Deliveries",
-  },
-];
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function WhatYouCanStore() {
+  const t = useTranslations("WhatYouCanStore");
+
+  const items = [
+    {
+      icon: "/icons/mail.png",
+      title: t("items.correspondence"),
+    },
+    {
+      icon: "/icons/document.png",
+      title: t("items.documents"),
+    },
+    {
+      icon: "/icons/parcel.png",
+      title: t("items.parcels"),
+    },
+    {
+      icon: "/icons/business.png",
+      title: t("items.businessRecords"),
+    },
+    {
+      icon: "/icons/key.png",
+      title: t("items.keys"),
+    },
+    {
+      icon: "/icons/secure.png",
+      title: t("items.confidentialItems"),
+    },
+    {
+      icon: "/icons/archive.png",
+      title: t("items.archives"),
+    },
+    {
+      icon: "/icons/delivery.png",
+      title: t("items.deliveries"),
+    },
+  ];
+
   return (
     <section id="storage" className="px-6 py-24">
       <div className="mx-auto max-w-7xl">
         <p className="text-center text-sm uppercase tracking-[0.35em] text-[#C8A86B]">
-          More than correspondence
+          {t("eyebrow")}
         </p>
 
         <h2 className="mt-5 text-center text-4xl font-bold md:text-5xl">
-          What Can You Store?
+          {t("title")}
         </h2>
 
         <p className="mx-auto mt-6 max-w-3xl text-center text-lg leading-relaxed text-[#D6D6D1]">
-          SafeBox gives you a secure private space for personal, professional
-          and business items in a controlled location.
+          {t("description")}
         </p>
 
         <div className="mt-14 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
@@ -58,13 +62,13 @@ export default function WhatYouCanStore() {
               key={item.title}
               className="rounded-3xl border border-[#C8A86B]/20 bg-[#0F1F33] p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
             >
-              <div className="flex justify-center mb-6">
+              <div className="mb-6 flex justify-center">
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={59}
-                  height={59}
-                  className="object-contain"
+                  width={64}
+                  height={64}
+                  className="h-16 w-16 object-contain"
                 />
               </div>
 

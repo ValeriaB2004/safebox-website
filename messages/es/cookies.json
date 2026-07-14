@@ -1,0 +1,85 @@
+{
+  "Cookies": {
+    "metaTitle": "Política de Cookies | SafeBox",
+    "metaDescription": "Información sobre las cookies y tecnologías similares utilizadas en el sitio web de SafeBox.",
+    "eyebrow": "Información del sitio web",
+    "title": "Política de Cookies",
+    "updated": "Última actualización: julio de 2026",
+    "sections": {
+      "definition": {
+        "title": "1. ¿Qué son las cookies?",
+        "text": "Las cookies son pequeños archivos de datos que un sitio web puede almacenar en el dispositivo de un visitante. Pueden permitir funciones esenciales, recordar preferencias, medir el rendimiento o facilitar servicios de terceros."
+      },
+      "currentUse": {
+        "title": "2. Tecnologías utilizadas actualmente",
+        "paragraphs": [
+          "El sitio web de SafeBox utiliza actualmente únicamente las tecnologías razonablemente necesarias para su funcionamiento, seguridad y envío del formulario de contacto.",
+          "SafeBox no utiliza actualmente cookies publicitarias ni tecnologías de elaboración de perfiles de comportamiento."
+        ],
+        "table": {
+          "category": "Categoría",
+          "purpose": "Finalidad",
+          "status": "Estado",
+          "rows": {
+            "essential": {
+              "category": "Tecnologías esenciales",
+              "purpose": "Funcionamiento, seguridad, navegación y entrega técnica del sitio web.",
+              "status": "Necesarias para el funcionamiento del sitio"
+            },
+            "forms": {
+              "category": "Servicios del formulario",
+              "purpose": "Procesar consultas de contacto y ayudar a prevenir envíos automatizados de spam.",
+              "status": "Se utilizan al enviar el formulario"
+            },
+            "analytics": {
+              "category": "Analítica",
+              "purpose": "Medir el uso y el rendimiento del sitio web.",
+              "status": "No está activada actualmente"
+            },
+            "advertising": {
+              "category": "Publicidad",
+              "purpose": "Publicidad personalizada, elaboración de perfiles o seguimiento entre sitios.",
+              "status": "No está activada actualmente"
+            }
+          }
+        }
+      },
+      "thirdParty": {
+        "title": "3. Servicios técnicos de terceros",
+        "paragraphs": [
+          "El sitio web está disponible a través del dominio oficial de SafeBox y puede utilizar proveedores técnicos especializados para el alojamiento, la seguridad, el envío de correos electrónicos y la infraestructura del sitio.",
+          "El formulario de contacto utiliza actualmente Formspree para procesar los envíos. Al enviar el formulario, podrán tratarse los datos de contacto y la información técnica limitada necesaria para entregar la consulta.",
+          "Si SafeBox incorpora analítica, mapas integrados, reservas de citas, vídeo, cuentas de cliente, pagos en línea u otras funciones de terceros, esta política se actualizará antes de su activación o en el momento de activarlas."
+        ]
+      },
+      "consent": {
+        "title": "4. Consentimiento de cookies",
+        "paragraphs": [
+          "Las tecnologías estrictamente necesarias para el funcionamiento del sitio web podrán utilizarse sin consentimiento opcional cuando la ley lo permita.",
+          "Las cookies opcionales o tecnologías similares que requieran consentimiento no se activarán hasta que el visitante haya recibido la información correspondiente y haya realizado una elección válida."
+        ]
+      },
+      "management": {
+        "title": "5. Gestión de cookies",
+        "paragraphs": [
+          "Los visitantes pueden controlar o eliminar las cookies mediante la configuración de su navegador.",
+          "El bloqueo de funciones técnicas esenciales puede afectar a la disponibilidad o al correcto funcionamiento de determinadas partes del sitio web.",
+          "Si SafeBox incorpora un panel de preferencias de cookies, los visitantes también podrán revisar o modificar sus preferencias mediante dicha herramienta."
+        ]
+      },
+      "changes": {
+        "title": "6. Cambios en esta política",
+        "paragraphs": [
+          "SafeBox podrá actualizar esta Política de Cookies cuando cambien las funciones del sitio web, los proveedores técnicos o los requisitos legales.",
+          "La versión más reciente se publicará siempre en esta página junto con su fecha de revisión."
+        ]
+      },
+      "contact": {
+        "title": "7. Contacto",
+        "paragraphs": [
+          "Las consultas relativas a esta Política de Cookies pueden enviarse mediante el formulario de contacto del sitio web de SafeBox o a contactsafebox2026@gmail.com."
+        ]
+      }
+    }
+  }
+}

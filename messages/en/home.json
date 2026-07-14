@@ -1,0 +1,224 @@
+{
+  "Hero": {
+    "eyebrow": "Secure. Private. Accessible.",
+    "title": "Your Safety Is Our Priority",
+    "description": "Secure private storage for correspondence, important documents, parcels and business deliveries, enhanced with Digital Mailroom services.",
+    "bookConsultation": "Book a Consultation",
+    "exploreSafeBox": "Explore SafeBox",
+    "exploreMemberships": "Explore Memberships",
+    "carouselLabel": "SAFEBOX",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "goToImage": "Go to image {number}",
+    "slides": {
+      "security": {
+        "title": "Maximum Security",
+        "description": "Professionally managed private SafeBoxes designed to keep your correspondence, documents and valuables secure."
+      },
+      "access": {
+        "title": "Private Access",
+        "description": "Access your SafeBox whenever you need it with complete privacy and confidence."
+      },
+      "collection": {
+        "title": "Simple Collection",
+        "description": "Collect correspondence, documents and small parcels quickly using your personal SafeBox key."
+      },
+      "personal": {
+        "title": "Personal & Business Solutions",
+        "description": "Flexible solutions for individuals, professionals and businesses."
+      },
+      "premium": {
+        "title": "Premium SafeBox Experience",
+        "description": "Elegant design, advanced security and professional service in one trusted location."
+      }
+    }
+  },
+  "PrivateBoxes": {
+    "title": "Private Box Solutions",
+    "description": "A secure private space for documents, correspondence, small items and personal or business essentials.",
+    "services": {
+      "privateRental": {
+        "title": "Private Box Rental",
+        "text": "Personal numbered boxes with secure access."
+      },
+      "secureReceiving": {
+        "title": "Secure Receiving",
+        "text": "Receive documents and small items safely."
+      },
+      "documentStorage": {
+        "title": "Document Storage",
+        "text": "Keep originals protected until collection."
+      },
+      "digitalServices": {
+        "title": "Digital Services",
+        "text": "Optional scanning and secure digital delivery."
+      },
+      "businessBoxes": {
+        "title": "Business Boxes",
+        "text": "Flexible private box solutions for companies."
+      },
+      "premiumHandling": {
+        "title": "Premium Handling",
+        "text": "Priority service for important documents."
+      }
+    }
+  },
+  "WhyChoose": {
+    "title": "Why Choose SafeBox?",
+    "security": "Security",
+    "confidentiality": "Confidentiality",
+    "directAccess": "Direct Access",
+    "trust": "Trust",
+    "professionalism": "Professionalism",
+    "flexiblePlans": "Flexible Plans",
+    "premiumLocation": "Premium Location",
+    "digitalServices": "Digital Services"
+  },
+  "SafeBoxSizes": {
+    "eyebrow": "Choose the right size",
+    "title": "Available SafeBox Sizes",
+    "description": "Every membership includes a SafeBox. Select the storage size that best suits your needs, with larger sizes available as an upgrade where applicable.",
+    "xs": {
+      "title": "XS SafeBox",
+      "status": "Included with Essential",
+      "description": "Ideal for letters, everyday correspondence and important documents."
+    },
+    "s": {
+      "title": "S SafeBox",
+      "status": "Included with Select, Signature & Executive",
+      "description": "Perfect for documents, small parcels and personal or professional storage."
+    },
+    "m": {
+      "title": "M SafeBox",
+      "status": "Upgrade available",
+      "description": "Provides additional capacity for larger parcels, business records and archive folders."
+    },
+    "l": {
+      "title": "L SafeBox",
+      "status": "Upgrade available",
+      "description": "Designed for large deliveries, equipment and archive storage."
+    },
+    "xl": {
+      "title": "XL SafeBox",
+      "status": "Upgrade available",
+      "description": "Maximum storage capacity for oversized deliveries, commercial storage and bulk archives."
+    },
+    "upgradeNote": "You can upgrade to a larger SafeBox at any time as your storage requirements grow, subject to availability."
+  },
+  "WhatYouCanStore": {
+    "eyebrow": "More than correspondence",
+    "title": "What Can You Store?",
+    "description": "SafeBox gives you a secure private space for personal, professional and business items in a controlled location.",
+    "items": {
+      "correspondence": "Correspondence",
+      "documents": "Important Documents",
+      "parcels": "Parcels",
+      "businessRecords": "Business Records",
+      "keys": "Keys",
+      "confidentialItems": "Confidential Items",
+      "archives": "Archives",
+      "deliveries": "Deliveries"
+    }
+  },
+  "WhoIsFor": {
+    "eyebrow": "Designed around your needs",
+    "title": "Who Is SafeBox For?",
+    "description": "SafeBox is designed for anyone who values security, privacy and reliable access to their correspondence and stored items.",
+
+    "individuals": {
+      "title": "Individuals",
+      "description": "A secure place for important correspondence, personal documents, keys and valuable everyday items."
+    },
+
+    "professionals": {
+      "title": "Professionals",
+      "description": "Ideal for consultants, remote workers and professionals who need a reliable address and secure document handling."
+    },
+
+    "businesses": {
+      "title": "Businesses",
+      "description": "Professional management of business correspondence, deliveries, archives and authorised team access."
+    },
+
+    "international": {
+      "title": "International Clients",
+      "description": "Perfect for property owners, investors and clients who spend time outside Spain but need a trusted local presence."
+    }
+  },
+  "HowItWorks": {
+    "eyebrow": "Simple and secure",
+    "title": "How SafeBox Works",
+    "description": "Getting started with SafeBox is quick and straightforward.",
+
+    "step1": {
+      "title": "Choose Your Membership",
+      "description": "Select the membership plan that best fits your needs. Every membership includes a SafeBox, with larger sizes available as an upgrade."
+    },
+
+    "step2": {
+      "title": "Receive Securely",
+      "description": "Use your SafeBox for correspondence, documents and parcel deliveries, knowing everything is stored securely until you need it."
+    },
+
+    "step3": {
+      "title": "Manage Your Mail",
+      "description": "Collect your items in person or use our optional scanning, forwarding and digital document services."
+    }
+  },
+  "PricingPreview": {
+    "eyebrow": "Flexible memberships",
+    "title": "Choose Your SafeBox Membership",
+    "description": "Designed for individuals, professionals and businesses, with flexible services and SafeBox sizes to suit different needs.",
+    "mostPopular": "Most Popular",
+    "perMonth": "per month",
+    "viewPlan": "View Plan",
+    "viewFullComparison": "View Full Comparison",
+    "plans": {
+      "essential": {
+        "description": "Perfect for individuals who need a secure private box and reliable correspondence handling."
+      },
+      "select": {
+        "description": "Ideal for professionals, remote workers and frequent travellers."
+      },
+      "signature": {
+        "description": "Complete document management, digital services and priority handling."
+      },
+      "executive": {
+        "description": "A complete business correspondence management solution."
+      }
+    }
+  },
+  "ContactForm": {
+    "eyebrow": "We're here to help",
+    "title": "Need Help Choosing the Right SafeBox?",
+    "description": "Whether you're looking for a secure place for personal correspondence, business documents, parcels or long-term storage, our team will help you choose the ideal SafeBox size and membership.",
+    "selectedPlanMessage": "Hello, I am interested in the SafeBox {plan} membership. Please contact me with more information.",
+    "benefits": {
+      "advice": {
+        "title": "Personal Advice",
+        "description": "We'll recommend the most suitable SafeBox solution."
+      },
+      "confidential": {
+        "title": "Secure & Confidential",
+        "description": "Every enquiry is handled confidentially."
+      },
+      "response": {
+        "title": "Fast Response",
+        "description": "We aim to respond within one business day."
+      }
+    },
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "membershipPlaceholder": "Which membership are you interested in?",
+      "notSure": "Not sure yet",
+      "message": "Message"
+    },
+    "submit": "Send Message"
+  },
+  "FloatingButton": {
+    "label": "Book Consultation",
+    "ariaLabel": "Book a SafeBox consultation"
+  }
+}

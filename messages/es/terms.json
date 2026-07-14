@@ -1,0 +1,101 @@
+{
+  "Terms": {
+    "metaTitle": "Términos y Condiciones | SafeBox",
+    "metaDescription": "Términos y condiciones aplicables al acceso al sitio web de SafeBox y a las consultas sobre sus servicios.",
+    "eyebrow": "Información legal",
+    "title": "Términos y Condiciones",
+    "updated": "Última actualización: julio de 2026",
+    "sections": {
+      "about": {
+        "title": "1. Objeto de estas condiciones",
+        "paragraphs": [
+          "Estos Términos y Condiciones regulan el acceso y el uso del sitio web de SafeBox. Al utilizar este sitio web, usted acepta estas condiciones."
+        ]
+      },
+      "operator": {
+        "title": "2. Titular del sitio web",
+        "introduction": "Este sitio web está operado por:",
+        "company": "Empresa",
+        "taxNumber": "CIF / NIF",
+        "address": "Domicilio social",
+        "email": "Correo electrónico"
+      },
+      "websiteInformation": {
+        "title": "3. Información del sitio web",
+        "paragraphs": [
+          "La información publicada en este sitio web se ofrece con fines informativos y promocionales. Describe los servicios, planes y servicios adicionales opcionales de SafeBox.",
+          "El contenido del sitio web no constituye por sí mismo un contrato vinculante, una reserva ni una garantía de disponibilidad."
+        ]
+      },
+      "membershipEnquiries": {
+        "title": "4. Consultas sobre planes",
+        "paragraphs": [
+          "El envío de una consulta o la selección de un plan en este sitio web no crea automáticamente una suscripción ni una relación contractual.",
+          "El plan entrará en vigor únicamente después de la identificación del cliente, la confirmación de disponibilidad, la aceptación del contrato de servicio aplicable y la realización del pago correspondiente."
+        ]
+      },
+      "prices": {
+        "title": "5. Precios y disponibilidad",
+        "paragraphs": [
+          "Los precios publicados en el sitio web pueden ser actualizados. Los impuestos aplicables, gastos de entrega, costes de reenvío y servicios adicionales se comunicarán antes de que el cliente celebre un contrato vinculante.",
+          "Los planes, tamaños de SafeBox y servicios adicionales están sujetos a disponibilidad."
+        ]
+      },
+      "permittedUse": {
+        "title": "6. Uso permitido",
+        "paragraphs": [
+          "Los usuarios no deberán utilizar indebidamente el sitio web, intentar acceder sin autorización, interferir en su funcionamiento, facilitar información falsa ni utilizarlo con fines ilícitos."
+        ]
+      },
+      "prohibitedItems": {
+        "title": "7. Artículos prohibidos",
+        "paragraphs": [
+          "Los servicios SafeBox no podrán utilizarse para mercancías ilegales, artículos peligrosos, materiales nocivos, armas, dinero en efectivo cuando esté prohibido, productos perecederos ni artículos restringidos por la ley o por el contrato de servicio aplicable.",
+          "La lista definitiva de artículos permitidos y prohibidos se establecerá en el contrato de servicio del cliente."
+        ]
+      },
+      "intellectualProperty": {
+        "title": "8. Propiedad intelectual",
+        "paragraphs": [
+          "El nombre SafeBox, el logotipo, la identidad visual, el diseño del sitio web, los textos, gráficos y demás contenidos están protegidos por la normativa aplicable en materia de propiedad intelectual.",
+          "No podrán copiarse, distribuirse, reproducirse ni utilizarse con fines comerciales sin autorización previa por escrito."
+        ]
+      },
+      "thirdPartyServices": {
+        "title": "9. Servicios de terceros",
+        "paragraphs": [
+          "El sitio web puede utilizar o enlazar servicios de terceros, incluidos proveedores de formularios, alojamiento, análisis, mapas, calendarios o pagos. Estos servicios podrán regirse por sus propias condiciones y políticas de privacidad."
+        ]
+      },
+      "availability": {
+        "title": "10. Disponibilidad del sitio web",
+        "paragraphs": [
+          "Procuramos mantener el sitio web actualizado y disponible, pero no garantizamos un funcionamiento ininterrumpido ni que toda la información esté siempre libre de errores.",
+          "Podremos modificar, suspender o retirar contenidos cuando resulte razonablemente necesario."
+        ]
+      },
+      "liability": {
+        "title": "11. Limitación de responsabilidad",
+        "paragraphs": [
+          "En la medida máxima permitida por la ley, el titular del sitio web no será responsable de daños indirectos derivados exclusivamente del uso o de la imposibilidad de acceder a este sitio web informativo.",
+          "Nada de lo dispuesto en estas condiciones excluye responsabilidades que legalmente no puedan excluirse ni limita los derechos imperativos de los consumidores."
+        ]
+      },
+      "privacy": {
+        "title": "12. Privacidad",
+        "beforeLink": "Los datos personales enviados a través del sitio web serán tratados conforme a nuestra",
+        "link": "Política de Privacidad"
+      },
+      "law": {
+        "title": "13. Legislación aplicable",
+        "paragraphs": [
+          "Estas condiciones se rigen por la legislación española, sin perjuicio de los derechos y fueros imperativos que correspondan a los consumidores conforme a la normativa aplicable."
+        ]
+      },
+      "contact": {
+        "title": "14. Contacto",
+        "text": "Las consultas relativas a estos Términos y Condiciones pueden enviarse mediante el formulario de contacto del sitio web de SafeBox."
+      }
+    }
+  }
+}

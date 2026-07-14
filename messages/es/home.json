@@ -1,0 +1,224 @@
+{
+  "Hero": {
+    "eyebrow": "Seguro. Privado. Accesible.",
+    "title": "Su seguridad es nuestra prioridad",
+    "description": "Almacenamiento privado y seguro para correspondencia, documentos importantes, paquetes y entregas comerciales, complementado con servicios de gestión digital de documentos.",
+    "bookConsultation": "Reservar una consulta",
+    "exploreSafeBox": "Descubrir SafeBox",
+    "exploreMemberships": "Ver planes",
+    "carouselLabel": "SAFEBOX",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "goToImage": "Ir a la imagen {number}",
+    "slides": {
+      "security": {
+        "title": "Máxima seguridad",
+        "description": "SafeBoxes privados gestionados profesionalmente para proteger su correspondencia, documentos y objetos de valor."
+      },
+      "access": {
+        "title": "Acceso privado",
+        "description": "Acceda a su SafeBox cuando lo necesite, con total privacidad y tranquilidad."
+      },
+      "collection": {
+        "title": "Recogida sencilla",
+        "description": "Recoja correspondencia, documentos y pequeños paquetes de forma rápida y segura con su llave personal."
+      },
+      "personal": {
+        "title": "Soluciones personales y empresariales",
+        "description": "Soluciones flexibles para particulares, profesionales y empresas."
+      },
+      "premium": {
+        "title": "Experiencia SafeBox premium",
+        "description": "Diseño elegante, seguridad avanzada y atención profesional en una ubicación de confianza."
+      }
+    }
+  },
+  "PrivateBoxes": {
+    "title": "Soluciones SafeBox",
+    "description": "Un espacio privado y seguro para documentos, correspondencia, pequeños objetos y necesidades personales o empresariales.",
+    "services": {
+      "privateRental": {
+        "title": "Alquiler de SafeBox privado",
+        "text": "SafeBoxes personales numerados con acceso seguro."
+      },
+      "secureReceiving": {
+        "title": "Recepción segura",
+        "text": "Reciba documentos y pequeños artículos de forma segura."
+      },
+      "documentStorage": {
+        "title": "Almacenamiento de documentos",
+        "text": "Mantenga los originales protegidos hasta su recogida."
+      },
+      "digitalServices": {
+        "title": "Servicios digitales",
+        "text": "Escaneo opcional y entrega digital segura."
+      },
+      "businessBoxes": {
+        "title": "SafeBoxes para empresas",
+        "text": "Soluciones privadas y flexibles para empresas."
+      },
+      "premiumHandling": {
+        "title": "Gestión premium",
+        "text": "Servicio prioritario para documentos importantes."
+      }
+    }
+  },
+  "WhyChoose": {
+    "title": "¿Por qué elegir SafeBox?",
+    "security": "Seguridad",
+    "confidentiality": "Confidencialidad",
+    "directAccess": "Acceso Directo",
+    "trust": "Confianza",
+    "professionalism": "Profesionalidad",
+    "flexiblePlans": "Planes Flexibles",
+    "premiumLocation": "Ubicación Premium",
+    "digitalServices": "Servicios Digitales"
+  }, 
+  "SafeBoxSizes": {
+    "eyebrow": "Elija el tamaño adecuado",
+    "title": "Tamaños de SafeBox disponibles",
+    "description": "Cada plan incluye un SafeBox. Elija el tamaño que mejor se adapte a sus necesidades, con la posibilidad de ampliarlo cuando corresponda.",
+    "xs": {
+      "title": "SafeBox XS",
+      "status": "Incluido con Essential",
+      "description": "Ideal para cartas, correspondencia diaria y documentos importantes."
+    },
+    "s": {
+      "title": "SafeBox S",
+      "status": "Incluido con Select, Signature y Executive",
+      "description": "Perfecto para documentos, pequeños paquetes y almacenamiento personal o profesional."
+    },
+    "m": {
+      "title": "SafeBox M",
+      "status": "Ampliación disponible",
+      "description": "Ofrece mayor capacidad para paquetes, documentación empresarial y archivadores."
+    },
+    "l": {
+      "title": "SafeBox L",
+      "status": "Ampliación disponible",
+      "description": "Diseñado para entregas grandes, equipos y almacenamiento de archivos."
+    },
+    "xl": {
+      "title": "SafeBox XL",
+      "status": "Ampliación disponible",
+      "description": "Máxima capacidad para envíos voluminosos, almacenamiento comercial y grandes archivos."
+    },
+    "upgradeNote": "Puede ampliar su SafeBox a un tamaño superior en cualquier momento según crezcan sus necesidades, sujeto a disponibilidad."
+  },
+  "WhatYouCanStore": {
+    "eyebrow": "Mucho más que correspondencia",
+    "title": "¿Qué puede guardar?",
+    "description": "SafeBox le ofrece un espacio privado y seguro para objetos personales, profesionales y empresariales en una ubicación controlada.",
+    "items": {
+      "correspondence": "Correspondencia",
+      "documents": "Documentos importantes",
+      "parcels": "Paquetes",
+      "businessRecords": "Documentación empresarial",
+      "keys": "Llaves",
+      "confidentialItems": "Objetos confidenciales",
+      "archives": "Archivos",
+      "deliveries": "Entregas"
+    }
+  },
+  "WhoIsFor": {
+    "eyebrow": "Diseñado para sus necesidades",
+    "title": "¿Para quién es SafeBox?",
+    "description": "SafeBox está diseñado para cualquier persona que valore la seguridad, la privacidad y un acceso fiable a su correspondencia y pertenencias.",
+
+    "individuals": {
+      "title": "Particulares",
+      "description": "Un lugar seguro para correspondencia importante, documentos personales, llaves y objetos de valor."
+    },
+
+    "professionals": {
+      "title": "Profesionales",
+      "description": "Ideal para consultores, trabajadores remotos y profesionales que necesitan una dirección fiable y una gestión segura de documentos."
+    },
+
+    "businesses": {
+      "title": "Empresas",
+      "description": "Gestión profesional de correspondencia empresarial, entregas, archivos y acceso autorizado para equipos."
+    },
+
+    "international": {
+      "title": "Clientes Internacionales",
+      "description": "Perfecto para propietarios, inversores y clientes que pasan tiempo fuera de España pero necesitan una presencia local de confianza."
+    }
+  },
+  "HowItWorks": {
+    "eyebrow": "Simple y seguro",
+    "title": "Cómo funciona SafeBox",
+    "description": "Empezar a utilizar SafeBox es rápido y sencillo.",
+
+    "step1": {
+      "title": "Elija su plan",
+      "description": "Seleccione el plan que mejor se adapte a sus necesidades. Todos los planes incluyen un SafeBox, con posibilidad de ampliación."
+    },
+
+    "step2": {
+      "title": "Reciba con seguridad",
+      "description": "Utilice su SafeBox para correspondencia, documentos y paquetes, sabiendo que todo permanecerá protegido hasta su recogida."
+    },
+
+    "step3": {
+      "title": "Gestione su correspondencia",
+      "description": "Recoja sus envíos personalmente o utilice nuestros servicios de escaneo, reenvío y gestión digital de documentos."
+    }
+  },
+  "PricingPreview": {
+    "eyebrow": "Planes flexibles",
+    "title": "Elija su plan SafeBox",
+    "description": "Planes diseñados para particulares, profesionales y empresas, con servicios y tamaños de SafeBox adaptados a distintas necesidades.",
+    "mostPopular": "Más popular",
+    "perMonth": "al mes",
+    "viewPlan": "Ver plan",
+    "viewFullComparison": "Ver comparación completa",
+    "plans": {
+      "essential": {
+        "description": "Perfecto para particulares que necesitan un SafeBox privado y una gestión fiable de su correspondencia."
+      },
+      "select": {
+        "description": "Ideal para profesionales, trabajadores remotos y viajeros frecuentes."
+      },
+      "signature": {
+        "description": "Gestión completa de documentos, servicios digitales y atención prioritaria."
+      },
+      "executive": {
+        "description": "Una solución completa para la gestión de correspondencia empresarial."
+      }
+    }
+  },
+  "ContactForm": {
+    "eyebrow": "Estamos aquí para ayudarle",
+    "title": "¿Necesita ayuda para elegir el SafeBox adecuado?",
+    "description": "Tanto si busca un lugar seguro para correspondencia personal, documentos empresariales, paquetes o almacenamiento a largo plazo, nuestro equipo le ayudará a elegir el tamaño y el plan de SafeBox más adecuados.",
+    "selectedPlanMessage": "Hola, estoy interesado en el plan SafeBox {plan}. Por favor, pónganse en contacto conmigo para facilitarme más información.",
+    "benefits": {
+      "advice": {
+        "title": "Asesoramiento personal",
+        "description": "Le recomendaremos la solución SafeBox más adecuada."
+      },
+      "confidential": {
+        "title": "Seguro y confidencial",
+        "description": "Todas las consultas se tratan con absoluta confidencialidad."
+      },
+      "response": {
+        "title": "Respuesta rápida",
+        "description": "Nuestro objetivo es responder en un día laborable."
+      }
+    },
+    "fields": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "membershipPlaceholder": "¿Qué plan le interesa?",
+      "notSure": "Todavía no estoy seguro",
+      "message": "Mensaje"
+    },
+    "submit": "Enviar mensaje"
+  },
+  "FloatingButton": {
+    "label": "Reservar consulta",
+    "ariaLabel": "Reservar una consulta de SafeBox"
+  }
+}

@@ -1,33 +1,61 @@
-const services = [
-  ["Private Box Rental", "Personal numbered boxes with secure access."],
-  ["Secure Receiving", "Receive documents and small items safely."],
-  ["Document Storage", "Keep originals protected until collection."],
-  ["Digital Services", "Optional scanning and digital delivery."],
-  ["Business Boxes", "Stable private box solutions for companies."],
-  ["Premium Handling", "Priority service for important documents."],
-];
+"use client";
+
+import { useTranslations } from "next-intl";
 
 export default function PrivateBoxes() {
+  const t = useTranslations("PrivateBoxes");
+
+  const services = [
+    {
+      title: t("services.privateRental.title"),
+      text: t("services.privateRental.text"),
+    },
+    {
+      title: t("services.secureReceiving.title"),
+      text: t("services.secureReceiving.text"),
+    },
+    {
+      title: t("services.documentStorage.title"),
+      text: t("services.documentStorage.text"),
+    },
+    {
+      title: t("services.digitalServices.title"),
+      text: t("services.digitalServices.text"),
+    },
+    {
+      title: t("services.businessBoxes.title"),
+      text: t("services.businessBoxes.text"),
+    },
+    {
+      title: t("services.premiumHandling.title"),
+      text: t("services.premiumHandling.text"),
+    },
+  ];
+
   return (
-    <section id="boxes" className="px-6 py-24 bg-[#0F1F33]">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-center">
-          Private Box Solutions
+    <section id="boxes" className="bg-[#0F1F33] px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="text-center text-4xl font-bold md:text-5xl">
+          {t("title")}
         </h2>
 
-        <p className="mt-6 text-center text-[#D6D6D1] max-w-3xl mx-auto">
-          A secure private space for documents, correspondence, small items and
-          personal or business essentials.
+        <p className="mx-auto mt-6 max-w-3xl text-center text-[#D6D6D1]">
+          {t("description")}
         </p>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
-          {services.map(([title, text]) => (
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
+          {services.map((service) => (
             <div
-              key={title}
-              className="bg-[#081320] border border-[#C8A86B]/20 rounded-3xl p-8"
+              key={service.title}
+              className="rounded-3xl border border-[#C8A86B]/20 bg-[#081320] p-8 transition-all duration-300 hover:-translate-y-2 hover:border-[#C8A86B] hover:shadow-2xl hover:shadow-[#C8A86B]/10"
             >
-              <h3 className="text-[#C8A86B] text-xl font-bold">{title}</h3>
-              <p className="mt-4 text-[#D6D6D1]">{text}</p>
+              <h3 className="text-xl font-bold text-[#C8A86B]">
+                {service.title}
+              </h3>
+
+              <p className="mt-4 leading-relaxed text-[#D6D6D1]">
+                {service.text}
+              </p>
             </div>
           ))}
         </div>

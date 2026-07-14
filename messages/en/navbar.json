@@ -1,0 +1,19 @@
+{
+  "Navbar": {
+    "solutions": "Solutions",
+    "sizes": "Sizes",
+    "whoItsFor": "Who It’s For",
+    "howItWorks": "How It Works",
+    "memberships": "Memberships",
+    "fullPricing": "Full Pricing",
+    "contact": "Contact",
+    "bookConsultation": "Book Consultation",
+    "tagline": "Private Storage Solutions"
+  },
+  "LanguageSwitcher": {
+    "english": "EN",
+    "spanish": "ES",
+    "russian": "RU",
+    "label": "Change language"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "PricingPage": {
+    "eyebrow": "Secure. Private. Professional.",
+    "title": "Choose Your Plan",
+    "description": "Select the plan that best fits your personal or business needs.",
+    "mostPopular": "Most Popular",
+    "perMonth": "per month",
+    "plans": {
+      "essential": {
+        "description": "Perfect for individuals who need a secure mailing address.",
+        "button": "Choose Essential",
+        "features": {
+          "1": "XS SafeBox",
+          "2": "Secure mail reception",
+          "3": "Secure document storage",
+          "4": "Instant SMS arrival notifications",
+          "5": "Mail collection during business hours",
+          "6": "Secure handling of correspondence",
+          "7": "7-day complimentary storage",
+          "8": "Client Portal access"
+        }
+      },
+      "select": {
+        "description": "Ideal for professionals, remote workers and frequent travellers.",
+        "button": "Choose Select",
+        "features": {
+          "1": "Everything in Essential",
+          "2": "Choose between XS and S SafeBox, with the option to upgrade",
+          "3": "Small parcel reception",
+          "4": "Extended storage period",
+          "5": "Parcel collection service",
+          "6": "Up to 5 document scans per month",
+          "7": "Digital document delivery",
+          "8": "Mail forwarding available",
+          "9": "Priority document processing"
+        }
+      },
+      "signature": {
+        "description": "Our most popular plan for premium document management.",
+        "button": "Choose Signature",
+        "features": {
+          "1": "Everything in Select",
+          "2": "Choose between XS and S SafeBox, with the option to upgrade",
+          "3": "Up to 25 document scans per month",
+          "4": "Storage reminders",
+          "5": "Express digital document delivery",
+          "6": "Extended secure document archive",
+          "7": "Priority document handling",
+          "8": "Priority customer support",
+          "9": "Reduced forwarding fees"
+        }
+      },
+      "executive": {
+        "description": "A complete business correspondence management solution.",
+        "button": "Choose Executive",
+        "features": {
+          "1": "Everything in Signature",
+          "2": "Choose between XS and S SafeBox, with the option to upgrade",
+          "3": "Multiple authorised users",
+          "4": "Business correspondence reception",
+          "5": "Unlimited document scanning",
+          "6": "Unlimited secure digital archive",
+          "7": "Secure international forwarding",
+          "8": "Monthly activity reports",
+          "9": "Dedicated Account Manager",
+          "10": "Priority Business Support",
+          "11": "Priority handling of all incoming correspondence"
+        }
+      }
+    },
+    "additionalServices": {
+      "eyebrow": "Flexible Extras",
+      "title": "Additional Services",
+      "description": "Enhance your SafeBox membership with optional scanning, forwarding, secure storage and collection services tailored to your needs.",
+      "items": {
+        "documentScanning": {
+          "title": "Document Scanning",
+          "description": "Convert incoming correspondence and documents into secure digital copies.",
+          "price": "€3.00 per envelope"
+        },
+        "expressScanning": {
+          "title": "Express Scanning",
+          "description": "Receive an urgent digital copy of your document within one hour.",
+          "price": "€10.00"
+        },
+        "documentForwarding": {
+          "title": "Secure Document Forwarding",
+          "description": "Forward correspondence and important documents to your chosen destination.",
+          "price": "From €12.00 + shipping"
+        },
+        "internationalForwarding": {
+          "title": "International Forwarding",
+          "description": "Worldwide forwarding for correspondence, documents and eligible parcels.",
+          "price": "Price on request"
+        },
+        "longTermStorage": {
+          "title": "Long-Term Secure Storage",
+          "description": "Keep documents and eligible items securely stored for an extended period.",
+          "price": "From €10.00 per month"
+        },
+        "additionalUser": {
+          "title": "Additional Authorised User",
+          "description": "Authorise another trusted person to collect items from your SafeBox.",
+          "price": "€10.00 per month"
+        },
+        "additionalSafeBox": {
+          "title": "Additional SafeBox",
+          "description": "Add another SafeBox to your membership when you need more capacity.",
+          "price": "€20.00 per month"
+        },
+        "oversizedParcel": {
+          "title": "Oversized Parcel Handling",
+          "description": "Receive and securely manage larger deliveries requiring special handling.",
+          "price": "From €5.00"
+        },
+        "expressCollection": {
+          "title": "Express Parcel Collection",
+          "description": "Priority preparation and handling for urgent parcel collection.",
+          "price": "€15.00"
+        },
+        "digitalArchive": {
+          "title": "Digital Document Archive",
+          "description": "Store scanned documents in a secure and organised digital archive.",
+          "price": "From €5.00 per month"
+        }
+      }
+    },
+    "businessAddOns": {
+      "eyebrow": "Business Solutions",
+      "title": "Business Add-Ons",
+      "description": "Advanced options for companies requiring secure team access, document management, reporting and dedicated support.",
+      "items": {
+        "collectionAuthorisations": {
+          "title": "Multiple Collection Authorisations",
+          "description": "Allow several approved people to collect correspondence and deliveries."
+        },
+        "teamAccess": {
+          "title": "Team Access Management",
+          "description": "Manage authorised users and access permissions for your organisation."
+        },
+        "secureArchive": {
+          "title": "Secure Document Archive",
+          "description": "Keep important business records securely organised and accessible."
+        },
+        "digitalManagement": {
+          "title": "Digital Document Management",
+          "description": "Receive, organise and manage business documents digitally."
+        },
+        "bulkScanning": {
+          "title": "Bulk Scanning",
+          "description": "Digitise larger volumes of documents efficiently and securely."
+        },
+        "monthlyReporting": {
+          "title": "Monthly Reporting",
+          "description": "Receive a monthly summary of correspondence, scans and activity."
+        },
+        "prioritySupport": {
+          "title": "Priority Support",
+          "description": "Receive faster assistance for urgent operational requests."
+        },
+        "accountManager": {
+          "title": "Dedicated Account Manager",
+          "description": "A single professional contact for your company’s SafeBox needs."
+        }
+      }
+    },
+    "moreSpace": {
+      "eyebrow": "Flexible SafeBox Sizes",
+      "title": "Need More Space?",
+      "description": "Upgrade your SafeBox size at any time as your storage needs grow, subject to availability.",
+      "button": "Ask About SafeBox Sizes"
+    }
+  }
+}

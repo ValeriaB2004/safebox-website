@@ -1,0 +1,32 @@
+{
+  "Privacy": {
+    "metaTitle": "Privacy Policy | SafeBox",
+    "title": "Privacy Policy",
+    "updated": "Last updated: July 2026",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "text": "SafeBox is committed to protecting your personal information and respecting your privacy. This Privacy Policy explains how we collect, use and safeguard your information when you visit our website or contact us."
+      },
+      "collect": {
+        "title": "2. Information We Collect",
+        "name": "Name",
+        "email": "Email address",
+        "phone": "Telephone number",
+        "message": "Messages submitted through our contact form"
+      },
+      "use": {
+        "title": "3. How We Use Your Information",
+        "text": "We only use your information to respond to enquiries, communicate with you regarding SafeBox services and improve our customer experience."
+      },
+      "protection": {
+        "title": "4. Data Protection",
+        "text": "We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, alteration or disclosure."
+      },
+      "contact": {
+        "title": "5. Contact",
+        "text": "For any questions regarding this Privacy Policy, please contact us using the contact form on this website."
+      }
+    }
+  }
+}
